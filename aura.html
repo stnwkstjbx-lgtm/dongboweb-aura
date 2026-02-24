@@ -1,0 +1,1092 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AURA — 청담 요가 스튜디오</title>
+<meta name="description" content="청담동 프라이빗 요가 스튜디오 아우라. 빈야사, 하타, 아쉬탕가, 명상. 나만의 흐름을 찾아드립니다.">
+
+<!-- Security -->
+<meta http-equiv="X-Content-Type-Options" content="nosniff">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=()">
+
+<!-- OG -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="AURA — 청담 요가 스튜디오">
+<meta property="og:description" content="나만의 흐름을 찾아드립니다. 청담동 프라이빗 요가 스튜디오.">
+<meta property="og:url" content="https://aura-yoga.com">
+<meta property="og:locale" content="ko_KR">
+<meta name="twitter:card" content="summary_large_image">
+
+<!-- JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"SportsActivityLocation",
+  "name":"아우라 AURA",
+  "alternateName":"AURA Yoga Studio",
+  "description":"청담동 프라이빗 요가 스튜디오. 빈야사, 하타, 아쉬탕가, 명상.",
+  "url":"https://aura-yoga.com",
+  "telephone":"+82-2-000-0000",
+  "address":{"@type":"PostalAddress","streetAddress":"청담동 00-00","addressLocality":"강남구","addressRegion":"서울특별시","postalCode":"06012","addressCountry":"KR"},
+  "geo":{"@type":"GeoCoordinates","latitude":37.5242,"longitude":127.0470},
+  "openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"07:00","closes":"22:00"}],
+  "priceRange":"₩₩",
+  "aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","reviewCount":"4"},
+  "sameAs":["https://instagram.com/aura.yoga"]
+}
+</script>
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='44' fill='none' stroke='%23E8836B' stroke-width='3'/><circle cx='50' cy='50' r='6' fill='%23E8836B'/></svg>">
+<link rel="canonical" href="https://aura-yoga.com">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Sora:wght@200;300;400;500;600;700&family=Noto+Sans+KR:wght@200;300;400;500;600&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Sora:wght@200;300;400;500;600;700&family=Noto+Sans+KR:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+<style>.loader{display:none!important}.grain{display:none!important}.rv,.rv-left,.rv-right,.rv-scale{opacity:1!important;transform:none!important}.hero-title,.hero-over,.hero-sub,.hero-ctas{opacity:1!important;animation:none!important}</style>
+</noscript>
+
+<style>
+/* ============================================================
+   ROOT — PURE WHITE + CORAL
+   ============================================================ */
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --bg:#FEFEFE;--bg2:#F6F4F2;--bg3:#EDEBE8;--bg4:#E2DFDB;
+  --white:#FFFFFF;--fg:#1A1816;--fg2:#2E2B28;--fg3:#4A4643;
+  --coral:#E8836B;--coral-light:#FCEEE9;--coral-dark:#D46B53;--coral-dim:rgba(232,131,107,.08);
+  --dim:#8A8582;--dim2:#ADA9A6;--dim3:#CCC8C5;
+  --border:rgba(26,24,22,.05);--border2:rgba(26,24,22,.08);--border3:rgba(26,24,22,.14);
+  --shadow-sm:0 2px 12px rgba(0,0,0,.03);--shadow-md:0 8px 32px rgba(0,0,0,.05);
+  --shadow-lg:0 20px 60px rgba(0,0,0,.07);
+  --sans:'Sora',sans-serif;
+  --body:'Noto Sans KR','Sora',sans-serif;
+  --ease:cubic-bezier(.16,1,.3,1);--ease-out:cubic-bezier(.33,1,.68,1);--ease-in-out:cubic-bezier(.65,0,.35,1);
+  --round:14px;--round-lg:20px;--round-full:100px;
+}
+html{scroll-behavior:smooth;cursor:none}
+body{font-family:var(--body);background:var(--bg);color:var(--fg);overflow-x:hidden;font-weight:300;cursor:none;-webkit-font-smoothing:antialiased}
+::selection{background:var(--coral);color:#fff}
+a,button{cursor:none}
+::-webkit-scrollbar{width:0;display:none}
+
+/* ============================================================
+   GRAIN TEXTURE
+   ============================================================ */
+.grain{position:fixed;inset:0;z-index:9000;pointer-events:none;opacity:.028;mix-blend-mode:multiply}
+.grain::after{content:'';position:absolute;inset:-200%;width:400%;height:400%;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E");background-size:128px;animation:grainDrift 1.5s steps(3) infinite}
+@keyframes grainDrift{0%{transform:translate(0,0)}33%{transform:translate(-2%,-3%)}66%{transform:translate(3%,1%)}100%{transform:translate(0,0)}}
+
+/* ============================================================
+   SCROLL PROGRESS
+   ============================================================ */
+.scroll-bar{position:fixed;top:0;left:0;width:100%;height:2px;z-index:9990;background:var(--coral);transform-origin:left;transform:scaleX(0);will-change:transform}
+
+/* ============================================================
+   LOADER — breathing circle
+   ============================================================ */
+.loader{position:fixed;inset:0;z-index:9999;background:var(--bg);display:flex;flex-direction:column;align-items:center;justify-content:center;transition:opacity .8s var(--ease),visibility 0s .8s}
+.loader.done{opacity:0;visibility:hidden}
+.ld-circle{width:60px;height:60px;border-radius:50%;border:1.5px solid var(--coral);animation:ldBreathe 2s var(--ease-in-out) infinite;opacity:0;animation-delay:.2s}
+.ld-brand{font-family:var(--sans);font-size:.7rem;letter-spacing:.5em;text-transform:uppercase;color:var(--fg);margin-top:22px;font-weight:300;opacity:0;animation:ldFade .8s .5s var(--ease) forwards}
+.ld-sub{font-family:var(--sans);font-size:.36rem;color:var(--dim);letter-spacing:.3em;text-transform:uppercase;margin-top:8px;opacity:0;animation:ldFade .6s .8s var(--ease) forwards}
+@keyframes ldBreathe{0%{transform:scale(.6);opacity:0}50%{transform:scale(1);opacity:1}100%{transform:scale(.6);opacity:0}}
+@keyframes ldFade{to{opacity:1}}
+
+/* ============================================================
+   CUSTOM CURSOR
+   ============================================================ */
+.cur{position:fixed;width:5px;height:5px;border-radius:50%;background:var(--coral);pointer-events:none;z-index:10000;transition:width .4s var(--ease),height .4s var(--ease)}
+.cur-ring{position:fixed;width:36px;height:36px;border-radius:50%;border:1px solid rgba(232,131,107,.15);pointer-events:none;z-index:9999;transition:all .5s var(--ease)}
+.cur-ring.hover{width:80px;height:80px;border-color:rgba(232,131,107,.25);background:rgba(232,131,107,.03)}
+.cur-ring.nav-hover{width:48px;height:48px;border-color:rgba(232,131,107,.2)}
+.cur-label{position:fixed;pointer-events:none;z-index:10001;font-family:var(--sans);font-size:.42rem;color:var(--coral);letter-spacing:.18em;text-transform:uppercase;opacity:0;transition:opacity .35s;font-weight:400}
+.cur-label.show{opacity:1}
+
+/* ============================================================
+   PLACEHOLDER
+   ============================================================ */
+.ph{display:flex;flex-direction:column;align-items:center;justify-content:center;width:100%;height:100%;gap:6px;position:relative;overflow:hidden;background:var(--bg2)}
+.ph::after{content:'';position:absolute;inset:0;background:linear-gradient(105deg,transparent 40%,rgba(232,131,107,.04) 50%,transparent 60%);animation:shimmer 2.4s infinite;background-size:200% 100%}
+@keyframes shimmer{0%{background-position:200% 0}100%{background-position:-200% 0}}
+.ph svg{width:22px;height:22px;fill:none;stroke:var(--dim3);stroke-width:.8}
+.ph span{font-size:.38rem;letter-spacing:.18em;text-transform:uppercase;color:var(--dim3);font-weight:300}
+.ph-dark{background:var(--fg)}
+.ph-dark svg{stroke:rgba(255,255,255,.1)}
+.ph-dark span{color:rgba(255,255,255,.06)}
+
+section{contain:layout style paint}
+
+/* ============================================================
+   NAV
+   ============================================================ */
+nav{position:fixed;top:0;left:0;right:0;z-index:200;padding:22px 48px;display:flex;align-items:center;justify-content:space-between;transition:all .5s var(--ease)}
+nav.scrolled{padding:14px 48px;background:rgba(254,254,254,.92);backdrop-filter:blur(24px);box-shadow:0 1px 0 var(--border)}
+.nav-logo{font-family:var(--sans);font-size:.82rem;text-decoration:none;color:var(--fg);letter-spacing:.32em;font-weight:300;text-transform:uppercase}
+.nav-logo b{font-weight:600;color:var(--coral)}
+.nav-right{display:flex;align-items:center;gap:24px}
+.nav-link{font-family:var(--sans);font-size:.46rem;color:var(--dim);text-decoration:none;letter-spacing:.12em;text-transform:uppercase;font-weight:300;transition:color .4s;padding:4px 0;position:relative}
+.nav-link::after{content:'';position:absolute;bottom:-2px;left:0;width:0;height:1.5px;background:var(--coral);border-radius:1px;transition:width .4s var(--ease)}
+.nav-link:hover,.nav-link.active{color:var(--fg)}
+.nav-link:hover::after,.nav-link.active::after{width:100%}
+.nav-cta{font-family:var(--sans);font-size:.44rem;padding:10px 22px;background:var(--coral);color:#fff;text-decoration:none;letter-spacing:.1em;text-transform:uppercase;font-weight:400;border-radius:var(--round-full);transition:all .4s var(--ease)}
+.nav-cta:hover{background:var(--coral-dark);transform:translateY(-2px);box-shadow:0 6px 20px rgba(232,131,107,.25)}
+
+.hbg{display:none;background:none;border:none;flex-direction:column;gap:5px;padding:6px;z-index:210}
+.hbg s{width:20px;height:1.5px;background:var(--fg);display:block;transition:all .5s var(--ease);transform-origin:center;text-decoration:none;border-radius:1px}
+.hbg.open s:nth-child(1){transform:rotate(45deg) translate(2.3px,2.3px)}
+.hbg.open s:nth-child(2){opacity:0;transform:scaleX(0)}
+.hbg.open s:nth-child(3){transform:rotate(-45deg) translate(2.3px,-2.3px)}
+
+.mob-menu{position:fixed;inset:0;z-index:205;background:var(--bg);display:flex;flex-direction:column;align-items:center;justify-content:center;opacity:0;pointer-events:none;transition:opacity .5s var(--ease)}
+.mob-menu.open{opacity:1;pointer-events:auto}
+.mob-menu::before{content:'AURA';position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-family:var(--sans);font-size:clamp(5rem,18vw,12rem);color:var(--coral-dim);letter-spacing:.2em;pointer-events:none;white-space:nowrap;font-weight:200}
+.mob-link{font-family:var(--sans);font-size:clamp(1.2rem,4vw,1.8rem);text-decoration:none;color:var(--fg);letter-spacing:.08em;font-weight:300;opacity:0;transform:translateY(18px);transition:all .5s var(--ease);padding:10px 0}
+.mob-menu.open .mob-link{opacity:1;transform:none}
+.mob-menu.open .mob-link:nth-child(1){transition-delay:.06s}
+.mob-menu.open .mob-link:nth-child(2){transition-delay:.1s}
+.mob-menu.open .mob-link:nth-child(3){transition-delay:.14s}
+.mob-menu.open .mob-link:nth-child(4){transition-delay:.18s}
+.mob-menu.open .mob-link:nth-child(5){transition-delay:.22s}
+.mob-menu.open .mob-link:nth-child(6){transition-delay:.26s}
+.mob-menu.open .mob-link:nth-child(7){transition-delay:.30s}
+.mob-cta{font-size:.6rem;padding:14px 36px;background:var(--coral);color:#fff;text-decoration:none;letter-spacing:.12em;text-transform:uppercase;margin-top:28px;font-weight:400;border-radius:var(--round-full);opacity:0;transform:translateY(14px);transition:all .5s .34s var(--ease)}
+.mob-menu.open .mob-cta{opacity:1;transform:none}
+
+/* ============================================================
+   HERO — FULLBLEED IMAGE + OVERLAY
+   ============================================================ */
+.hero{position:relative;min-height:100vh;min-height:100dvh;overflow:hidden;display:flex;align-items:flex-end}
+.hero-bg{position:absolute;inset:0;transition:transform .06s linear}
+.hero-bg-inner{width:100%;height:100%;background:var(--bg3)}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(26,24,22,0) 30%,rgba(26,24,22,.55) 100%);z-index:1}
+.hero-content{position:relative;z-index:2;padding:0 max(48px,6vw) 64px;width:100%;max-width:800px}
+.hero-over{font-family:var(--sans);font-size:.46rem;letter-spacing:.5em;text-transform:uppercase;color:rgba(255,255,255,.55);margin-bottom:18px;display:flex;align-items:center;gap:10px;opacity:0;animation:hUp .9s .5s var(--ease) forwards}
+.hero-over::before{content:'';width:28px;height:1.5px;background:var(--coral);border-radius:1px}
+.hero-title{font-family:var(--body);font-size:clamp(2.2rem,4.5vw,3.8rem);font-weight:200;line-height:1.35;letter-spacing:-.01em;color:#fff;margin-bottom:16px;opacity:0;animation:hUp .9s .7s var(--ease) forwards}
+.hero-title strong{font-weight:600;color:var(--coral)}
+.hero-sub{font-size:.78rem;color:rgba(255,255,255,.55);line-height:2;font-weight:300;max-width:420px;opacity:0;animation:hUp .9s .9s var(--ease) forwards}
+.hero-ctas{display:flex;gap:12px;margin-top:28px;opacity:0;animation:hUp .9s 1.1s var(--ease) forwards}
+.hero-btn-fill{font-family:var(--sans);font-size:.48rem;padding:14px 32px;background:var(--coral);color:#fff;text-decoration:none;letter-spacing:.1em;text-transform:uppercase;font-weight:400;border-radius:var(--round-full);transition:all .4s var(--ease)}
+.hero-btn-fill:hover{background:var(--coral-dark);transform:translateY(-2px);box-shadow:0 8px 24px rgba(232,131,107,.3)}
+.hero-btn-ghost{font-family:var(--sans);font-size:.48rem;padding:14px 28px;border:1px solid rgba(255,255,255,.2);color:#fff;text-decoration:none;letter-spacing:.1em;text-transform:uppercase;font-weight:300;border-radius:var(--round-full);transition:all .4s var(--ease)}
+.hero-btn-ghost:hover{border-color:rgba(255,255,255,.5);background:rgba(255,255,255,.06);transform:translateY(-2px)}
+@keyframes hUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+.hero-scroll{position:absolute;bottom:28px;right:max(48px,6vw);z-index:2;display:flex;flex-direction:column;align-items:center;gap:8px;opacity:0;animation:hUp .9s 1.4s var(--ease) forwards}
+.hero-scroll-text{font-family:var(--sans);font-size:.32rem;letter-spacing:.28em;text-transform:uppercase;color:rgba(255,255,255,.28);writing-mode:vertical-rl}
+.scroll-line{width:1.5px;height:36px;overflow:hidden;position:relative;border-radius:1px}
+.scroll-line::after{content:'';position:absolute;top:-100%;left:0;width:100%;height:100%;background:var(--coral);border-radius:1px;animation:scrollY 2s infinite var(--ease-in-out)}
+@keyframes scrollY{0%{top:-100%}100%{top:100%}}
+
+/* breathing deco */
+.hero-breath{position:absolute;top:50%;right:12%;transform:translateY(-50%);z-index:2;width:clamp(120px,14vw,180px);height:clamp(120px,14vw,180px);pointer-events:none;opacity:0;animation:hUp 1s 1.6s var(--ease) forwards}
+.hero-breath-ring{position:absolute;inset:0;border-radius:50%;border:1px solid rgba(232,131,107,.2);animation:breathe 6s var(--ease-in-out) infinite}
+.hero-breath-ring:nth-child(2){inset:15%;animation-delay:1s;border-color:rgba(232,131,107,.15)}
+.hero-breath-ring:nth-child(3){inset:30%;animation-delay:2s;border-color:rgba(232,131,107,.1)}
+.hero-breath-dot{position:absolute;top:50%;left:50%;width:6px;height:6px;border-radius:50%;background:var(--coral);transform:translate(-50%,-50%);animation:breatheDot 6s var(--ease-in-out) infinite}
+@keyframes breathe{0%,100%{transform:scale(.85);opacity:.4}50%{transform:scale(1.1);opacity:1}}
+@keyframes breatheDot{0%,100%{transform:translate(-50%,-50%) scale(.8);opacity:.5}50%{transform:translate(-50%,-50%) scale(1.2);opacity:1}}
+
+/* ============================================================
+   USP STRIP — keyword bar (unique to AURA)
+   ============================================================ */
+.usp{padding:42px 48px;background:var(--bg);border-bottom:1px solid var(--border)}
+.usp-inner{display:flex;align-items:center;justify-content:center;gap:28px;max-width:1100px;margin:0 auto;flex-wrap:wrap}
+.usp-kw{font-family:var(--sans);font-size:.52rem;color:var(--fg2);letter-spacing:.18em;font-weight:300;text-transform:uppercase;transition:color .4s var(--ease);white-space:nowrap}
+.usp-kw:hover{color:var(--coral)}
+.usp-sep{width:4px;height:4px;border-radius:50%;background:var(--coral);flex-shrink:0;opacity:.4}
+
+/* ============================================================
+   SECTION COMMON
+   ============================================================ */
+.sec-label{font-family:var(--sans);font-size:.38rem;letter-spacing:.4em;text-transform:uppercase;color:var(--coral);font-weight:400;margin-bottom:10px;display:flex;align-items:center;gap:8px}
+.sec-label::before{content:'';width:16px;height:1.5px;background:var(--coral);border-radius:1px}
+.sec-title{font-family:var(--sans);font-size:clamp(1.4rem,2.8vw,2rem);font-weight:200;letter-spacing:.02em;margin-bottom:12px;line-height:1.4}
+.sec-title strong{font-weight:600}
+.sec-desc{font-size:.72rem;color:var(--dim);line-height:2.2;font-weight:200;max-width:460px}
+
+/* ============================================================
+   ABOUT — CENTERED SINGLE COLUMN (differs from NOIR 2-col)
+   ============================================================ */
+.about{padding:120px 48px 140px;position:relative;overflow:hidden}
+.about-inner{max-width:1100px;margin:0 auto}
+.about-top{text-align:center;max-width:640px;margin:0 auto 48px}
+.about-top .sec-label{justify-content:center}
+.about-quote{font-family:var(--body);font-size:clamp(1.3rem,2.4vw,1.8rem);font-weight:200;line-height:1.85;color:var(--fg2);margin-bottom:16px}
+.about-quote strong{font-weight:500;color:var(--coral)}
+.about-body{font-size:.72rem;color:var(--dim);line-height:2.4;font-weight:200}
+.about-imgs{display:grid;grid-template-columns:3fr 2fr;gap:12px;margin-bottom:48px}
+.about-img-main{aspect-ratio:16/10;background:var(--bg3);border-radius:var(--round-lg);overflow:hidden}
+.about-img-sub{aspect-ratio:3/4;background:var(--coral-light);border-radius:var(--round-lg);overflow:hidden}
+.about-img-main:hover .ph,.about-img-sub:hover .ph{opacity:.9}
+.about-bottom{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;max-width:720px;margin:0 auto;padding-top:40px;border-top:1px solid var(--border2)}
+.stat{text-align:center;padding:16px 0}
+.stat-num{font-family:var(--sans);font-size:clamp(1.8rem,2.8vw,2.4rem);color:var(--coral);display:block;line-height:1.1;font-weight:600}
+.stat-label{font-family:var(--sans);font-size:.36rem;color:var(--dim);letter-spacing:.14em;text-transform:uppercase;margin-top:6px;display:block;font-weight:300}
+
+/* ============================================================
+   PROGRAMS — HORIZONTAL SCROLL SNAP
+   ============================================================ */
+.programs{padding:140px 0 160px;background:var(--bg2)}
+.prog-header{max-width:1100px;margin:0 auto 44px;padding:0 48px;display:flex;justify-content:space-between;align-items:flex-end}
+.prog-scroll{display:flex;gap:20px;overflow-x:auto;scroll-snap-type:x mandatory;padding:0 48px 20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+.prog-scroll::-webkit-scrollbar{display:none}
+.prog-card{flex:0 0 320px;scroll-snap-align:start;background:var(--white);border-radius:var(--round-lg);overflow:hidden;transition:all .5s var(--ease);border:1px solid var(--border)}
+.prog-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-md);border-color:var(--coral)}
+.prog-img{height:200px;overflow:hidden;position:relative}
+.prog-img-inner{width:100%;height:100%;transition:transform .6s var(--ease)}
+.prog-card:hover .prog-img-inner{transform:scale(1.06)}
+.prog-badge{position:absolute;top:14px;left:14px;font-family:var(--sans);font-size:.34rem;padding:5px 12px;background:var(--coral);color:#fff;border-radius:var(--round-full);letter-spacing:.08em;text-transform:uppercase;font-weight:400;z-index:1}
+.prog-body{padding:22px 24px 26px}
+.prog-name{font-family:var(--sans);font-size:1rem;font-weight:500;margin-bottom:3px}
+.prog-name-en{font-family:var(--sans);font-size:.36rem;color:var(--dim2);letter-spacing:.1em;text-transform:uppercase;font-weight:300;margin-bottom:10px;display:block}
+.prog-desc{font-size:.66rem;color:var(--dim);line-height:2;font-weight:200;margin-bottom:14px}
+.prog-tags{display:flex;gap:5px;flex-wrap:wrap}
+.prog-tag{font-family:var(--sans);font-size:.32rem;color:var(--coral);padding:4px 10px;border:1px solid var(--coral);border-radius:var(--round-full);letter-spacing:.06em;font-weight:400;transition:all .3s}
+.prog-card:hover .prog-tag{background:var(--coral-light)}
+.prog-arrows{display:flex;gap:8px}
+.prog-arrow{width:36px;height:36px;border-radius:50%;border:1px solid var(--border3);background:var(--white);display:flex;align-items:center;justify-content:center;font-size:.5rem;color:var(--dim);transition:all .3s;cursor:pointer}
+.prog-arrow:hover{border-color:var(--coral);color:var(--coral);transform:scale(1.06)}
+
+/* ============================================================
+   PRICING — MEMBERSHIP CARDS (unique to AURA)
+   ============================================================ */
+.pricing{padding:140px 48px;background:var(--bg);position:relative}
+.price-header{max-width:1100px;margin:0 auto 44px}
+.price-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;max-width:1100px;margin:0 auto}
+.price-card{background:var(--white);border:1px solid var(--border);border-radius:var(--round-lg);padding:32px 24px;display:flex;flex-direction:column;transition:all .5s var(--ease);position:relative;overflow:hidden}
+.price-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-md);border-color:var(--coral);background:var(--white)}
+.price-card:hover .price-cta-line{border-color:var(--coral);color:var(--coral)}
+.price-card:hover .price-feat li::before{background:var(--coral)}
+.price-name{font-family:var(--sans);font-size:.42rem;letter-spacing:.2em;text-transform:uppercase;color:var(--coral);font-weight:400;margin-bottom:16px}
+.price-amount{font-family:var(--sans);font-size:clamp(1.6rem,2.4vw,2rem);font-weight:600;color:var(--fg);line-height:1.1}
+.price-per{font-family:var(--sans);font-size:.36rem;color:var(--dim);font-weight:300;margin-top:4px;letter-spacing:.04em}
+.price-desc{font-size:.56rem;color:var(--dim);font-weight:200;line-height:1.8;margin-top:12px}
+.price-line{border:none;border-top:1px solid var(--border);margin:20px 0}
+.price-feat{list-style:none;display:flex;flex-direction:column;gap:8px;flex:1}
+.price-feat li{font-size:.56rem;color:var(--dim);font-weight:200;padding-left:16px;position:relative;line-height:1.6}
+.price-feat li::before{content:'';position:absolute;left:0;top:7px;width:6px;height:6px;border-radius:50%;background:var(--coral-light)}
+.price-cta{display:block;text-align:center;padding:12px;font-family:var(--sans);font-size:.44rem;letter-spacing:.1em;text-transform:uppercase;font-weight:400;border-radius:var(--round-full);text-decoration:none;margin-top:20px;transition:all .4s var(--ease)}
+.price-cta-line{border:1px solid var(--border3);color:var(--fg)}
+.price-cta-line:hover{border-color:var(--coral);color:var(--coral);transform:translateY(-2px)}
+.price-cta-fill{background:var(--coral);color:#fff}
+.price-cta-fill:hover{background:var(--coral-dark);transform:translateY(-2px);box-shadow:0 6px 18px rgba(232,131,107,.25)}
+.price-note{max-width:1100px;margin:20px auto 0;font-family:var(--sans);font-size:.38rem;color:var(--dim2);text-align:center;letter-spacing:.04em}
+
+/* ============================================================
+   GALLERY — MASONRY GRID
+   ============================================================ */
+.gallery{padding:140px 48px;background:var(--fg);position:relative;overflow:hidden}
+.gallery::before{content:'FLOW';position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-family:var(--sans);font-size:clamp(4rem,11vw,10rem);font-weight:200;color:rgba(255,255,255,.02);letter-spacing:.5em;pointer-events:none;white-space:nowrap;text-transform:uppercase}
+.gal-header{max-width:1100px;margin:0 auto 44px}
+.gallery .sec-label{color:rgba(232,131,107,.7)}.gallery .sec-label::before{background:rgba(232,131,107,.5)}
+.gallery .sec-title{color:var(--bg)}
+.gallery .sec-title strong{color:var(--coral)}
+.gal-grid{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:160px;gap:6px;max-width:1100px;margin:0 auto}
+.gal-item{position:relative;overflow:hidden;border-radius:var(--round);transition:all .5s var(--ease);cursor:pointer}
+.gal-item:hover{z-index:2}
+.gi-inner{width:100%;height:100%;transition:transform .6s var(--ease)}
+.gal-item:hover .gi-inner{transform:scale(1.06)}
+.gi1{grid-column:span 2;grid-row:span 2;background:#2A2725}
+.gi2{background:#252220}
+.gi3{grid-row:span 2;background:#1F1D1B}
+.gi4{background:#2E2B28}
+.gi5{grid-column:span 2;background:#232120}
+.gi6{background:#282523}
+.gi7{grid-column:span 2;grid-row:span 2;background:#1C1A18}
+.gi8{background:#262320}
+.gal-overlay{position:absolute;inset:0;background:linear-gradient(transparent 40%,rgba(232,131,107,.5));opacity:0;transition:opacity .5s var(--ease);display:flex;align-items:flex-end;padding:16px;border-radius:var(--round)}
+.gal-item:hover .gal-overlay{opacity:1}
+.gal-cap{font-family:var(--sans);font-size:.5rem;color:#fff;letter-spacing:.08em;font-weight:400}
+
+/* LIGHTBOX */
+.lb{position:fixed;inset:0;z-index:300;display:flex;align-items:center;justify-content:center;opacity:0;pointer-events:none;transition:opacity .5s}
+.lb.open{opacity:1;pointer-events:auto}
+.lb-bg{position:absolute;inset:0;background:rgba(26,24,22,.94);backdrop-filter:blur(32px)}
+.lb-inner{position:relative;z-index:1;width:80vw;max-width:880px;height:70vh;overflow:hidden;border-radius:var(--round-lg);transform:scale(.92) translateY(14px);transition:all .6s var(--ease);opacity:0;display:flex;align-items:center;justify-content:center;background:var(--bg3)}
+.lb.open .lb-inner{transform:scale(1) translateY(0);opacity:1}
+.lb-close{position:absolute;top:18px;right:18px;z-index:2;width:40px;height:40px;background:rgba(255,255,255,.1);backdrop-filter:blur(12px);border:none;color:rgba(255,255,255,.5);font-size:1rem;display:flex;align-items:center;justify-content:center;transition:all .4s var(--ease);border-radius:50%;font-family:var(--sans)}
+.lb-close:hover{background:var(--coral);color:#fff;transform:rotate(90deg)}
+.lb-nav{position:absolute;top:50%;transform:translateY(-50%);z-index:2;width:42px;height:42px;background:rgba(255,255,255,.08);backdrop-filter:blur(12px);border:none;color:rgba(255,255,255,.4);font-size:.7rem;display:flex;align-items:center;justify-content:center;transition:all .4s var(--ease);border-radius:50%}
+.lb-nav:hover{background:var(--coral);color:#fff}
+.lb-prev{left:18px}.lb-next{right:18px}
+.lb-counter{position:absolute;top:18px;left:18px;z-index:2;font-family:var(--sans);font-size:.42rem;color:rgba(255,255,255,.2);letter-spacing:.14em}
+.lb-caption{position:absolute;bottom:18px;left:18px;z-index:2;font-family:var(--sans);font-size:.42rem;color:rgba(255,255,255,.25);letter-spacing:.08em;font-weight:300}
+
+/* ============================================================
+   INSTRUCTORS — OFFSET CARDS
+   ============================================================ */
+.instructors{padding:140px 48px;background:var(--bg2);position:relative;overflow:hidden}
+.inst-header{max-width:1100px;margin:0 auto 52px}
+.inst-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;max-width:1100px;margin:0 auto}
+.inst-card{border-radius:var(--round-lg);overflow:hidden;transition:all .5s var(--ease);background:var(--white);border:1px solid var(--border)}
+.inst-card:nth-child(2){margin-top:48px}
+.inst-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-md);border-color:rgba(232,131,107,.2)}
+.inst-img{aspect-ratio:4/5;overflow:hidden;position:relative}
+.inst-img-inner{width:100%;height:100%;transition:transform .6s var(--ease)}
+.inst-card:hover .inst-img-inner{transform:scale(1.04)}
+.ib1{background:#F0EDEA}.ib2{background:#EBE8E5}.ib3{background:#E6E3E0}
+.inst-overlay{position:absolute;inset:0;background:linear-gradient(transparent 40%,rgba(26,24,22,.6));opacity:0;transition:opacity .5s var(--ease);display:flex;flex-direction:column;justify-content:flex-end;padding:22px}
+.inst-card:hover .inst-overlay{opacity:1}
+.inst-overlay-text{font-family:var(--body);font-size:.6rem;color:rgba(255,255,255,.85);font-weight:300;line-height:1.8;transform:translateY(8px);transition:transform .5s var(--ease)}
+.inst-card:hover .inst-overlay-text{transform:none}
+.inst-info{padding:20px 22px}
+.inst-info h3{font-family:var(--sans);font-size:.92rem;font-weight:500;margin-bottom:3px}
+.inst-role{font-family:var(--sans);font-size:.38rem;color:var(--coral);letter-spacing:.16em;text-transform:uppercase;font-weight:400;margin-bottom:10px}
+.inst-tags{display:flex;gap:4px;flex-wrap:wrap}
+.inst-tag{font-family:var(--sans);font-size:.32rem;color:var(--dim);padding:3px 9px;border:1px solid var(--border2);border-radius:var(--round-full);letter-spacing:.04em;transition:all .3s}
+.inst-card:hover .inst-tag{border-color:var(--coral);color:var(--coral)}
+
+/* ============================================================
+   QUOTE BREAK — rhythm breaker (unique to AURA)
+   ============================================================ */
+.quote-break{padding:80px 48px;text-align:center;position:relative}
+.quote-break-inner{max-width:600px;margin:0 auto}
+.quote-break-text{font-family:var(--body);font-size:clamp(1.1rem,2vw,1.5rem);font-weight:200;color:var(--fg2);line-height:2;letter-spacing:.02em}
+.quote-break-text strong{font-weight:500;color:var(--coral)}
+.quote-break-src{font-family:var(--sans);font-size:.38rem;color:var(--dim2);letter-spacing:.2em;text-transform:uppercase;margin-top:16px;display:block}
+
+/* ============================================================
+   REVIEWS — STACKED CARDS
+   ============================================================ */
+.reviews{padding:140px 48px;background:var(--bg);position:relative;overflow:hidden}
+.reviews::before{content:'';position:absolute;top:80px;right:-40px;width:200px;height:200px;border-radius:50%;border:1.5px solid var(--coral);opacity:.06}
+.rv-header{max-width:1100px;margin:0 auto 48px}
+.rv-slider{position:relative;max-width:640px;margin:0 auto;overflow:hidden}
+.rv-track{display:flex;transition:transform .6s var(--ease)}
+.rv-card{flex:0 0 100%;padding:0 20px}
+.rv-card-inner{background:var(--white);border-radius:var(--round-lg);padding:36px 32px;border:1px solid var(--border);position:relative;box-shadow:var(--shadow-sm)}
+.rv-card-inner::before{content:'';position:absolute;top:0;left:28px;right:28px;height:3px;background:var(--coral);border-radius:0 0 2px 2px;opacity:.5}
+.rv-text{font-family:var(--body);font-size:.82rem;font-weight:300;line-height:2.2;color:var(--fg2);margin-bottom:20px}
+.rv-who{display:flex;align-items:center;gap:12px}
+.rv-avatar{width:36px;height:36px;border-radius:50%;background:var(--coral-light);display:flex;align-items:center;justify-content:center;font-family:var(--sans);font-size:.48rem;color:var(--coral);font-weight:500}
+.rv-name{font-family:var(--sans);font-size:.5rem;color:var(--fg);font-weight:500;letter-spacing:.04em}
+.rv-src{font-family:var(--sans);font-size:.34rem;color:var(--dim2);display:flex;align-items:center;gap:4px;margin-top:2px;font-weight:300}
+.rv-src::before{content:'';width:8px;height:1px;background:var(--dim3)}
+.rv-controls{display:flex;align-items:center;justify-content:center;gap:14px;margin-top:32px}
+.rv-arrow{width:34px;height:34px;border:1px solid var(--border2);background:var(--white);display:flex;align-items:center;justify-content:center;font-size:.5rem;color:var(--dim);transition:all .3s var(--ease);border-radius:50%}
+.rv-arrow:hover{border-color:var(--coral);color:var(--coral);transform:scale(1.08)}
+.rv-dots{display:flex;gap:5px}
+.rv-dot{width:5px;height:5px;border-radius:50%;background:var(--dim3);border:none;padding:0;transition:all .4s var(--ease)}
+.rv-dot.active{background:var(--coral);width:20px;border-radius:3px}
+.rv-bar{width:80px;height:2px;background:var(--border);overflow:hidden;margin:0 6px;border-radius:1px}
+.rv-bar-fill{width:0;height:100%;background:var(--coral);border-radius:1px;transition:width .05s linear}
+
+/* ============================================================
+   FAQ
+   ============================================================ */
+.faq{padding:100px 48px;background:var(--white);border-top:1px solid var(--border)}
+.faq-header{max-width:1100px;margin:0 auto 36px}
+.faq-list{max-width:1100px;margin:0 auto}
+.faq-item{border-bottom:1px solid var(--border)}
+.faq-q{display:flex;align-items:center;justify-content:space-between;padding:20px 0;background:none;border:none;width:100%;text-align:left;font-family:var(--body);font-size:.78rem;color:var(--fg);font-weight:300;letter-spacing:.01em;transition:color .3s;cursor:pointer}
+.faq-q:hover{color:var(--coral)}
+.faq-q-icon{width:20px;height:20px;flex-shrink:0;border-radius:50%;border:1px solid var(--border2);display:flex;align-items:center;justify-content:center;position:relative;margin-left:14px;transition:all .4s var(--ease)}
+.faq-q-icon::before,.faq-q-icon::after{content:'';position:absolute;background:var(--dim2);transition:all .4s var(--ease)}
+.faq-q-icon::before{width:8px;height:1px}
+.faq-q-icon::after{width:1px;height:8px}
+.faq-item.open .faq-q-icon{border-color:var(--coral);background:var(--coral-light)}
+.faq-item.open .faq-q-icon::after{transform:rotate(90deg);opacity:0}
+.faq-item.open .faq-q-icon::before{background:var(--coral)}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .5s var(--ease)}
+.faq-a-inner{padding:0 0 20px;font-size:.68rem;color:var(--dim);line-height:2.2;font-weight:200}
+.faq-item.open .faq-a{max-height:200px}
+
+/* ============================================================
+   INFO + MAP
+   ============================================================ */
+.info{padding:140px 48px;background:var(--bg2)}
+.info-header{max-width:1100px;margin:0 auto 40px}
+.info-layout{display:grid;grid-template-columns:1fr 1fr;gap:40px;max-width:1100px;margin:0 auto}
+.info-left{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.info-col h4{font-family:var(--sans);font-size:.78rem;font-weight:500;margin-bottom:8px}
+.info-col p{font-size:.66rem;color:var(--dim);line-height:2.2;font-weight:200}
+.info-btns{display:flex;gap:8px;margin-top:14px;flex-wrap:wrap}
+.btn-line{padding:10px 18px;border:1px solid var(--border3);color:var(--fg);text-decoration:none;font-family:var(--sans);font-size:.42rem;letter-spacing:.1em;text-transform:uppercase;font-weight:300;border-radius:var(--round-full);transition:all .4s var(--ease)}
+.btn-line:hover{border-color:var(--coral);color:var(--coral);transform:translateY(-2px)}
+.btn-fill{padding:10px 18px;background:var(--coral);color:#fff;text-decoration:none;font-family:var(--sans);font-size:.42rem;letter-spacing:.1em;text-transform:uppercase;font-weight:400;border-radius:var(--round-full);transition:all .4s var(--ease)}
+.btn-fill:hover{background:var(--coral-dark);transform:translateY(-2px)}
+.info-note{grid-column:1/3;padding-top:16px;border-top:1px solid var(--border)}
+.map-ph{background:var(--bg3);border-radius:var(--round-lg);display:flex;align-items:center;justify-content:center;min-height:280px;transition:all .5s var(--ease);text-decoration:none;color:var(--dim3)}
+.map-ph:hover{background:var(--bg4);box-shadow:var(--shadow-sm)}
+.map-ph-inner{text-align:center}
+.map-ph-inner svg{width:24px;height:24px;fill:none;stroke:var(--coral);stroke-width:1;margin-bottom:6px;opacity:.5}
+.map-ph-inner p{font-family:var(--sans);font-size:.4rem;letter-spacing:.14em;text-transform:uppercase;color:var(--dim)}
+.map-ph-inner small{font-size:.3rem;color:var(--dim3);letter-spacing:.06em;margin-top:4px;display:block}
+
+/* ============================================================
+   FOOTER
+   ============================================================ */
+footer{padding:44px 48px;border-top:1px solid var(--border2)}
+.ft-inner{max-width:1100px;margin:0 auto;display:flex;justify-content:space-between;align-items:center}
+.ft-logo{font-family:var(--sans);font-size:.72rem;letter-spacing:.3em;color:var(--fg);text-decoration:none;font-weight:300;text-transform:uppercase}
+.ft-copy{font-family:var(--sans);font-size:.38rem;color:var(--dim2);letter-spacing:.06em}
+.ft-right{display:flex;align-items:center;gap:14px}
+.ft-link{color:var(--dim);text-decoration:none;font-family:var(--sans);font-size:.4rem;letter-spacing:.06em;font-weight:300;transition:color .3s}
+.ft-link:hover{color:var(--coral)}
+.ft-top{width:32px;height:32px;border-radius:50%;border:1px solid var(--border2);display:flex;align-items:center;justify-content:center;color:var(--dim);text-decoration:none;font-size:.6rem;transition:all .4s var(--ease)}
+.ft-top:hover{border-color:var(--coral);color:var(--coral);transform:translateY(-3px)}
+
+/* ============================================================
+   FLOATING
+   ============================================================ */
+.kakao-float{position:fixed;bottom:26px;right:26px;width:48px;height:48px;border-radius:50%;background:#FEE500;display:flex;align-items:center;justify-content:center;text-decoration:none;z-index:90;box-shadow:0 4px 18px rgba(0,0,0,.06);transition:all .5s var(--ease)}
+.kakao-float:hover{transform:translateY(-5px) scale(1.06);box-shadow:0 8px 24px rgba(0,0,0,.12)}
+.kakao-float svg{width:22px;height:22px;fill:#3C1E1E}
+.mob-bar{display:none;position:fixed;bottom:0;left:0;right:0;background:rgba(254,254,254,.95);backdrop-filter:blur(20px);border-top:1px solid var(--border);padding:10px 16px calc(10px + env(safe-area-inset-bottom));z-index:100}
+.mb-inner{display:flex;gap:8px}
+.mob-bar a{flex:1;text-align:center;padding:12px;text-decoration:none;font-size:.72rem;font-weight:300;letter-spacing:.06em;border-radius:var(--round);transition:all .3s}
+.m-line{border:1px solid var(--fg);color:var(--fg)}.m-fill{background:var(--coral);color:#fff}
+.back-top{position:fixed;bottom:26px;left:26px;width:38px;height:38px;border-radius:50%;border:1px solid var(--border2);background:var(--white);display:flex;align-items:center;justify-content:center;color:var(--dim);text-decoration:none;z-index:90;font-size:.65rem;opacity:0;transform:translateY(8px);pointer-events:none;transition:all .5s var(--ease);box-shadow:var(--shadow-sm)}
+.back-top.visible{opacity:1;transform:none;pointer-events:auto}
+.back-top:hover{border-color:var(--coral);color:var(--coral);transform:translateY(-3px)}
+
+/* SEC DOTS */
+.sec-dots{position:fixed;right:26px;top:50%;transform:translateY(-50%);z-index:190;display:flex;flex-direction:column;gap:12px;opacity:0;transition:opacity .5s var(--ease)}
+.sec-dots.visible{opacity:1}
+.sec-dot{width:4px;height:4px;border-radius:50%;background:var(--dim3);border:none;padding:0;transition:all .4s var(--ease);position:relative;cursor:pointer}
+.sec-dot::after{content:attr(data-label);position:absolute;right:16px;top:50%;transform:translateY(-50%);font-family:var(--sans);font-size:.3rem;color:var(--dim2);letter-spacing:.12em;text-transform:uppercase;white-space:nowrap;opacity:0;transition:opacity .3s;pointer-events:none}
+.sec-dot:hover::after{opacity:1}
+.sec-dot.active{background:var(--coral);width:4px;height:16px;border-radius:2px}
+
+/* TOAST */
+.toast{position:fixed;bottom:100px;left:50%;transform:translateX(-50%) translateY(14px);z-index:250;background:var(--fg);color:var(--bg);padding:13px 28px 13px 18px;display:flex;align-items:center;gap:12px;box-shadow:var(--shadow-lg);opacity:0;pointer-events:none;transition:all .6s var(--ease);max-width:380px;font-size:.68rem;font-weight:300;border-radius:var(--round)}
+.toast.show{opacity:1;transform:translateX(-50%) translateY(0);pointer-events:auto}
+.toast-close{position:absolute;top:5px;right:7px;background:none;border:none;color:rgba(255,255,255,.25);font-size:.55rem;padding:4px;transition:color .3s;cursor:pointer}
+.toast-close:hover{color:rgba(255,255,255,.6)}
+.toast a{color:var(--coral);text-decoration:underline;text-underline-offset:2px}
+
+/* ============================================================
+   3D TILT (desktop only)
+   ============================================================ */
+.tilt-card{transition:transform .5s var(--ease),box-shadow .5s var(--ease);transform-style:preserve-3d;will-change:transform}
+
+/* ============================================================
+   MAGNETIC BUTTON (desktop only)
+   ============================================================ */
+.mag-btn{transition:transform .4s var(--ease)}
+
+/* ============================================================
+   ANIMATIONS
+   ============================================================ */
+.rv{opacity:0;transform:translateY(28px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
+.rv.show{opacity:1;transform:none}
+.rv-d1{transition-delay:.08s}.rv-d2{transition-delay:.16s}.rv-d3{transition-delay:.24s}.rv-d4{transition-delay:.32s}
+.rv-left{opacity:0;transform:translateX(-28px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
+.rv-left.show{opacity:1;transform:none}
+.rv-right{opacity:0;transform:translateX(28px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
+.rv-right.show{opacity:1;transform:none}
+.rv-scale{opacity:0;transform:scale(.95);transition:opacity .9s var(--ease),transform .9s var(--ease)}
+.rv-scale.show{opacity:1;transform:none}
+
+/* ============================================================
+   WIDESCREEN >=1500
+   ============================================================ */
+@media(min-width:1500px){
+  .about{padding-left:calc((100vw - 1200px)/2);padding-right:calc((100vw - 1200px)/2)}
+  .programs .prog-header{padding-left:calc((100vw - 1200px)/2)}
+  .instructors,.reviews,.info,.faq,.pricing{padding-left:calc((100vw - 1200px)/2);padding-right:calc((100vw - 1200px)/2)}
+  .about-inner,.inst-grid,.gal-grid,.price-grid,.price-header,.price-note{max-width:1200px}
+}
+
+/* ============================================================
+   TABLET <=1024
+   ============================================================ */
+@media(max-width:1024px){
+  .about-imgs{gap:10px}
+  .inst-grid{grid-template-columns:repeat(2,1fr);gap:20px}
+  .inst-card:nth-child(2){margin-top:0}
+  .gal-grid{grid-template-columns:repeat(3,1fr);grid-auto-rows:140px}
+  .gi1{grid-column:span 2;grid-row:span 2}
+  .gi7{grid-column:span 1;grid-row:span 2}
+}
+
+/* ============================================================
+   MOBILE <=768
+   ============================================================ */
+@media(max-width:768px){
+  html,body,a,button{cursor:auto}.cur,.cur-ring,.cur-label{display:none}
+  nav{padding:16px 20px}.nav-right{display:none}.hbg{display:flex}
+  nav.scrolled{padding:12px 20px}
+  nav.nav-hidden{transform:translateY(-100%)}
+  .sec-dots{display:none}
+  .toast{bottom:80px;max-width:calc(100vw - 36px);font-size:.64rem}
+  .back-top{bottom:86px;left:14px;width:34px;height:34px}
+  .hero{min-height:85vh}.hero-content{max-width:100%;padding:0 20px 48px}
+  .hero-title{font-size:clamp(1.8rem,7vw,2.6rem)}
+  .hero-ctas{flex-direction:column;gap:10px}
+  .hero-btn-fill,.hero-btn-ghost{width:100%;max-width:240px;text-align:center}
+  .hero-scroll{display:none}
+  .hero-breath{display:none}
+  .usp{padding:28px 20px}
+  .usp-inner{gap:12px;justify-content:center}
+  .usp-kw{font-size:.42rem;letter-spacing:.12em}
+  .usp-sep{width:3px;height:3px}
+  .about{padding:80px 20px}
+  .about-top{margin-bottom:32px}
+  .about-imgs{grid-template-columns:1fr;gap:10px;margin-bottom:32px}
+  .about-img-sub{aspect-ratio:16/10}
+  .about-bottom{gap:12px;padding-top:28px}
+  .programs{padding:80px 0 90px}
+  .prog-header{padding:0 20px;flex-direction:column;align-items:flex-start;gap:12px}
+  .prog-scroll{padding:0 20px 16px;gap:14px}
+  .prog-card{flex:0 0 280px}
+  .pricing{padding:80px 20px}
+  .price-grid{grid-template-columns:1fr;max-width:360px;margin:0 auto;gap:14px}
+  .instructors{padding:80px 20px}
+  .inst-grid{grid-template-columns:1fr;max-width:360px;margin:0 auto;gap:16px}
+  .inst-card:nth-child(2){margin-top:0}
+  .quote-break{padding:56px 20px}
+  .gallery{padding:80px 20px}
+  .gal-header{margin-bottom:28px}
+  .gal-grid{grid-template-columns:repeat(2,1fr);grid-auto-rows:120px;gap:4px}
+  .gi1,.gi5,.gi7{grid-column:span 2}
+  .gi3{grid-row:span 1}
+  .gal-overlay{opacity:1;background:linear-gradient(transparent 50%,rgba(232,131,107,.35))}
+  .lb-inner{width:94vw;height:58vh;border-radius:var(--round)}.lb-nav{width:34px;height:34px;font-size:.5rem;cursor:pointer}
+  .lb-prev{left:6px}.lb-next{right:6px}.lb-close{top:10px;right:10px;width:34px;height:34px;cursor:pointer}
+  .reviews{padding:80px 20px}.rv-card{padding:0 6px}
+  .faq{padding:60px 20px}.faq-q{font-size:.72rem;padding:16px 0}
+  .info{padding:80px 20px}.info-layout{grid-template-columns:1fr;gap:24px}
+  .info-left{grid-template-columns:1fr;gap:14px}.info-note{grid-column:auto!important}
+  .map-ph{min-height:180px;border-radius:var(--round)}
+  footer{padding:20px 20px calc(86px + env(safe-area-inset-bottom))}
+  .ft-inner{flex-direction:column;gap:10px;text-align:center}
+  .kakao-float{display:none}.mob-bar{display:block}
+  .scroll-bar{height:2px}
+}
+@media(max-width:380px){
+  .hero-title{font-size:1.6rem}.stat-num{font-size:1.4rem}
+}
+
+@media(hover:none){
+  .hero-btn-fill:active,.hero-btn-ghost:active,.nav-cta:active,.btn-line:active,.btn-fill:active,.insta-btn:active,.mob-cta:active,.mob-link:active{transform:scale(.96)!important;opacity:.85;transition:all .1s}
+  .prog-card:active,.inst-card:active,.price-card:active{transform:scale(.98)!important;transition:all .15s}
+  .rv-arrow:active,.rv-dot:active,.faq-q:active,.lb-close:active,.lb-nav:active,.back-top:active,.ft-top:active,.prog-arrow:active{transform:scale(.9)!important;transition:all .1s}
+}
+
+*:focus{outline:none}*:focus-visible{outline:2px solid var(--coral);outline-offset:3px;border-radius:2px}
+.skip-link{position:absolute;top:-100%;left:50%;transform:translateX(-50%);background:var(--coral);color:#fff;padding:12px 24px;z-index:99999;font-size:.7rem;letter-spacing:.1em;text-decoration:none;border-radius:0 0 var(--round) var(--round);transition:top .3s}
+.skip-link:focus{top:0}
+
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}
+  .loader{transition:none}.scroll-line::after{animation:none!important}.hero-breath-ring,.hero-breath-dot{animation:none!important}.grain::after{animation:none!important}
+  .tilt-card{transform:none!important}
+}
+
+@media print{
+  *{background:transparent!important;color:#000!important;box-shadow:none!important}
+  .loader,.scroll-bar,.cur,.cur-ring,.cur-label,.mob-menu,.kakao-float,.mob-bar,.back-top,.hero-scroll,.hero-breath,.sec-dots,.toast,.grain{display:none!important}
+  nav{position:static;padding:16px 0;background:none!important;backdrop-filter:none}.nav-cta,.hbg{display:none}
+  .hero{height:auto;min-height:auto;padding:32px 0}.hero-overlay{display:none}
+  .rv,.rv-left,.rv-right,.rv-scale{opacity:1!important;transform:none!important}
+  .hero-title,.hero-over,.hero-sub,.hero-ctas{opacity:1!important;animation:none!important}
+  a[href]::after{content:" (" attr(href) ")";font-size:.55rem;color:#666}
+  @page{margin:1.5cm}
+}
+</style>
+</head>
+<body>
+
+<a href="#about" class="skip-link">본문으로 바로가기</a>
+<div class="scroll-bar" id="scrollBar" role="progressbar" aria-label="스크롤 진행률"></div>
+
+<!-- GRAIN -->
+<div class="grain" aria-hidden="true"></div>
+
+<!-- LOADER -->
+<div class="loader" id="loader">
+  <div class="ld-circle"></div>
+  <div class="ld-brand">AURA</div>
+  <div class="ld-sub">Yoga Studio · Cheongdam</div>
+</div>
+
+<!-- CURSOR -->
+<div class="cur" id="cur"></div>
+<div class="cur-ring" id="ring"></div>
+<div class="cur-label" id="curLabel"></div>
+
+<!-- SEC DOTS -->
+<div class="sec-dots" id="secDots">
+  <button class="sec-dot" data-target="hero" data-label="Home" aria-label="홈"></button>
+  <button class="sec-dot" data-target="about" data-label="About" aria-label="소개"></button>
+  <button class="sec-dot" data-target="programs" data-label="Programs" aria-label="프로그램"></button>
+  <button class="sec-dot" data-target="pricing" data-label="Pricing" aria-label="멤버십"></button>
+  <button class="sec-dot" data-target="gallery" data-label="Gallery" aria-label="갤러리"></button>
+  <button class="sec-dot" data-target="instructors" data-label="Instructors" aria-label="강사"></button>
+  <button class="sec-dot" data-target="reviews" data-label="Reviews" aria-label="후기"></button>
+  <button class="sec-dot" data-target="info" data-label="Visit" aria-label="방문"></button>
+</div>
+
+<!-- TOAST -->
+<div class="toast" id="toast">
+  <span>첫 수업 무료 체험 <a href="https://pf.kakao.com/_aura" target="_blank" rel="noopener noreferrer">신청하기</a></span>
+  <button class="toast-close" id="toastClose" aria-label="닫기">&#10005;</button>
+</div>
+
+<!-- MOBILE MENU -->
+<div class="mob-menu" id="mobMenu">
+  <a class="mob-link" href="#about" data-close>소개</a>
+  <a class="mob-link" href="#programs" data-close>프로그램</a>
+  <a class="mob-link" href="#pricing" data-close>멤버십</a>
+  <a class="mob-link" href="#gallery" data-close>갤러리</a>
+  <a class="mob-link" href="#instructors" data-close>강사진</a>
+  <a class="mob-link" href="#reviews" data-close>후기</a>
+  <a class="mob-link" href="#info" data-close>오시는 길</a>
+  <a class="mob-cta" href="https://pf.kakao.com/_aura" target="_blank" rel="noopener noreferrer">체험 신청</a>
+</div>
+
+<!-- NAV -->
+<nav id="nav">
+  <a class="nav-logo" href="#"><b>A</b>URA</a>
+  <div class="nav-right">
+    <a class="nav-link" href="#about">About</a>
+    <a class="nav-link" href="#programs">Programs</a>
+    <a class="nav-link" href="#pricing">Pricing</a>
+    <a class="nav-link" href="#gallery">Gallery</a>
+    <a class="nav-link" href="#instructors">Instructors</a>
+    <a class="nav-link" href="#reviews">Reviews</a>
+    <a class="nav-link" href="#info">Visit</a>
+    <a class="nav-cta" href="https://pf.kakao.com/_aura" target="_blank" rel="noopener noreferrer">체험 신청</a>
+  </div>
+  <button class="hbg" id="hbg" aria-label="메뉴" aria-expanded="false"><s></s><s></s><s></s></button>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="hero">
+  <div class="hero-bg" id="heroBg"><div class="hero-bg-inner"><div class="ph ph-dark"><svg viewBox="0 0 24 24"><path d="M23 19a2 2 0 01-2 2H3a2 2 0 01-2-2V8a2 2 0 012-2h4l2-3h6l2 3h4a2 2 0 012 2z"/><circle cx="12" cy="13" r="4"/></svg><span>히어로 사진</span></div></div></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <div class="hero-over">Cheongdam Yoga Studio</div>
+    <h1 class="hero-title">나만의 <strong>흐름</strong>을<br>찾아가는 시간.</h1>
+    <p class="hero-sub">몸과 마음이 하나 되는 순간,<br>당신만의 리듬을 발견합니다.</p>
+    <div class="hero-ctas">
+      <a href="https://pf.kakao.com/_aura" class="hero-btn-fill" target="_blank" rel="noopener noreferrer">체험 신청 →</a>
+      <a href="#programs" class="hero-btn-ghost">프로그램 보기</a>
+    </div>
+  </div>
+  <div class="hero-scroll"><span class="hero-scroll-text">Scroll</span><div class="scroll-line"></div></div>
+  <div class="hero-breath" aria-hidden="true"><div class="hero-breath-ring"></div><div class="hero-breath-ring"></div><div class="hero-breath-ring"></div><div class="hero-breath-dot"></div></div>
+</section>
+
+<!-- USP STRIP — keyword bar -->
+<div class="usp rv">
+  <div class="usp-inner">
+    <span class="usp-kw">소수정원 8명</span>
+    <span class="usp-sep" aria-hidden="true"></span>
+    <span class="usp-kw">6가지 프로그램</span>
+    <span class="usp-sep" aria-hidden="true"></span>
+    <span class="usp-kw">평균 경력 10년</span>
+    <span class="usp-sep" aria-hidden="true"></span>
+    <span class="usp-kw">첫 수업 무료</span>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+  <div class="about-inner">
+    <div class="about-top rv">
+      <div class="sec-label">About Us</div>
+      <p class="about-quote">요가는 <strong>유연함</strong>이 아니라<br><strong>알아차림</strong>입니다.</p>
+      <p class="about-body">아우라는 청담동에 위치한 소규모 프라이빗 요가 스튜디오입니다. 최대 8명의 소수정원 수업으로, 개인의 몸 상태와 목표에 맞춘 세심한 지도를 제공합니다. 화려한 동작이 아닌, 나 자신과 만나는 고요한 시간을 선물합니다.</p>
+    </div>
+    <div class="about-imgs rv rv-d2">
+      <div class="about-img-main" data-hover="Our Space"><div class="ph"><svg viewBox="0 0 24 24"><path d="M23 19a2 2 0 01-2 2H3a2 2 0 01-2-2V8a2 2 0 012-2h4l2-3h6l2 3h4a2 2 0 012 2z"/><circle cx="12" cy="13" r="4"/></svg><span>스튜디오 전경</span></div></div>
+      <div class="about-img-sub" data-hover="Detail"><div class="ph"><svg viewBox="0 0 24 24"><path d="M23 19a2 2 0 01-2 2H3a2 2 0 01-2-2V8a2 2 0 012-2h4l2-3h6l2 3h4a2 2 0 012 2z"/><circle cx="12" cy="13" r="4"/></svg><span>디테일</span></div></div>
+    </div>
+    <div class="about-bottom rv rv-d3">
+      <div class="stat"><span class="stat-num" data-count="8">0</span><span class="stat-label">최대 인원</span></div>
+      <div class="stat"><span class="stat-num" data-count="6">0</span><span class="stat-label">프로그램</span></div>
+      <div class="stat"><span class="stat-num" data-count="10">0</span><span class="stat-label">평균 경력 (yr)</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- PROGRAMS -->
+<section class="programs rv" id="programs">
+  <div class="prog-header">
+    <div><div class="sec-label">Programs</div><h2 class="sec-title">수업 <strong>프로그램</strong></h2><p class="sec-desc">초보자부터 숙련자까지, 나에게 맞는 수업을 찾아보세요.</p></div>
+    <div class="prog-arrows"><button class="prog-arrow" id="progPrev" aria-label="이전">&#8592;</button><button class="prog-arrow" id="progNext" aria-label="다음">&#8594;</button></div>
+  </div>
+  <div class="prog-scroll" id="progScroll">
+    <div class="prog-card"><div class="prog-img"><div class="prog-img-inner"><div class="ph"><svg viewBox="0 0 24 24"><path d="M23 19a2 2 0 01-2 2H3a2 2 0 01-2-2V8a2 2 0 012-2h4l2-3h6l2 3h4a2 2 0 012 2z"/><circle cx="12" cy="13" r="4"/></svg><span>빈야사</span></div></div><span class="prog-badge">Popular</span></div><div class="prog-body"><div class="prog-name">빈야사 플로우</div><span class="prog-name-en">Vinyasa Flow</span><p class="prog-desc">호흡과 움직임을 연결하는 유동적인 시퀀스. 체력과 유연성을 동시에 기릅니다.</p><div class="prog-tags"><span class="prog-tag">중급</span><span class="prog-tag">60분</span><span class="prog-tag">소수정원</span></div></div></div>
+    <div class="prog-card"><div class="prog-img"><div class="prog-img-inner"><div class="ph"><svg viewBox="0 0 24 24"><path d="M23 19a2 2 0 01-2 2H3a2 2 0 01-2-2V8a2 2 0 012-2h4l2-3h6l2 3h4a2 2 0 012 2z"/><circle cx="12" cy="13" r="4"/></svg><span>하타</span></div></div></div><div class="prog-body"><div class="prog-name">하타 요가</div><span class="prog-name-en">Hatha Yoga</span><p class="prog-desc">기본 아사나를 정확하게. 호흡과 정렬에 집중하는 정통 요가입니다.</p><div class="prog-tags"><span class="prog-tag">초급</span><span class="prog-tag">75분</span><span class="prog-tag">소수정원</span></div></div></div>
+    <div class="prog-card"><div class="prog-img"><div class="prog-img-inner"><div class="ph"><svg viewBox="0 0 24 24"><path d="M23 19a2 2 0 01-2 2H3a2 2 0 01-2-2V8a2 2 0 012-2h4l2-3h6l2 3h4a2 2 0 012 2z"/><circle cx="12" cy="13" r="4"/></svg><span>아쉬탕가</span></div></div><span class="prog-badge">Advanced</span></div><div class="prog-body"><div class="prog-name">아쉬탕가</div><span class="prog-name-en">Ashtanga</span><p class="prog-desc">정해진 시퀀스를 반복하며 수련하는 전통 방식. 강도 높은 체력 훈련.</p><div class="prog-tags"><span class="prog-tag">상급</span><span class="prog-tag">90분</span><span class="prog-tag">소수정원</span></div></div></div>
+    <div class="prog-card"><div class="prog-img"><div class="prog-img-inner"><div class="ph"><svg viewBox="0 0 24 24"><path d="M23 19a2 2 0 01-2 2H3a2 2 0 01-2-2V8a2 2 0 012-2h4l2-3h6l2 3h4a2 2 0 012 2z"/><circle cx="12" cy="13" r="4"/></svg><span>인요가</span></div></div></div><div class="prog-body"><div class="prog-name">인 요가</div><span class="prog-name-en">Yin Yoga</span><p class="prog-desc">3~5분 이상 자세를 유지하며 깊은 결합 조직을 이완합니다. 명상적 수련.</p><div class="prog-tags"><span class="prog-tag">전체</span><span class="prog-tag">75분</span><span class="prog-tag">소수정원</span></div></div></div>
+    <div class="prog-card"><div class="prog-img"><div class="prog-img-inner"><div class="ph"><svg viewBox="0 0 24 24"><path d="M23 19a2 2 0 01-2 2H3a2 2 0 01-2-2V8a2 2 0 012-2h4l2-3h6l2 3h4a2 2 0 012 2z"/><circle cx="12" cy="13" r="4"/></svg><span>명상</span></div></div></div><div class="prog-body"><div class="prog-name">명상 + 호흡</div><span class="prog-name-en">Meditation & Breathwork</span><p class="prog-desc">프라나야마와 마음챙김 명상. 스트레스 해소와 집중력 향상에 도움.</p><div class="prog-tags"><span class="prog-tag">전체</span><span class="prog-tag">50분</span><span class="prog-tag">소수정원</span></div></div></div>
+    <div class="prog-card"><div class="prog-img"><div class="prog-img-inner"><div class="ph"><svg viewBox="0 0 24 24"><path d="M23 19a2 2 0 01-2 2H3a2 2 0 01-2-2V8a2 2 0 012-2h4l2-3h6l2 3h4a2 2 0 012 2z"/><circle cx="12" cy="13" r="4"/></svg><span>프라이빗</span></div></div><span class="prog-badge">1:1</span></div><div class="prog-body"><div class="prog-name">프라이빗 세션</div><span class="prog-name-en">Private Session</span><p class="prog-desc">개인 맞춤 1:1 수업. 목표와 컨디션에 따라 프로그램을 설계합니다.</p><div class="prog-tags"><span class="prog-tag">맞춤</span><span class="prog-tag">60분</span><span class="prog-tag">1:1</span></div></div></div>
+  </div>
+</section>
+
+<!-- PRICING — MEMBERSHIP CARDS -->
+<section class="pricing rv" id="pricing">
+  <div class="price-header"><div class="sec-label">Membership</div><h2 class="sec-title">멤버십 <strong>안내</strong></h2><p class="sec-desc">나에게 맞는 수련 방식을 선택하세요.</p></div>
+  <div class="price-grid">
+    <div class="price-card rv rv-d1">
+      <div class="price-name">체험</div>
+      <div class="price-amount">무료</div>
+      <div class="price-per">1회 체험 수업</div>
+      <p class="price-desc">처음 오시는 분을 위한 무료 체험</p>
+      <hr class="price-line">
+      <ul class="price-feat">
+        <li>그룹 수업 1회 체험</li>
+        <li>소도구 전체 제공</li>
+        <li>사전 상담 포함</li>
+        <li>수업 후 프로그램 안내</li>
+      </ul>
+      <a href="https://pf.kakao.com/_aura" class="price-cta price-cta-line" target="_blank" rel="noopener noreferrer">체험 신청</a>
+    </div>
+    <div class="price-card rv rv-d2">
+      <div class="price-name">횟수권</div>
+      <div class="price-amount">20만원</div>
+      <div class="price-per">10회 · 2개월 유효</div>
+      <p class="price-desc">부담 없이 시작하는 요가 수련</p>
+      <hr class="price-line">
+      <ul class="price-feat">
+        <li>그룹 수업 10회</li>
+        <li>프로그램 자유 선택</li>
+        <li>소도구 전체 제공</li>
+        <li>개인 락커 이용</li>
+      </ul>
+      <a href="https://pf.kakao.com/_aura" class="price-cta price-cta-line" target="_blank" rel="noopener noreferrer">상담 문의</a>
+    </div>
+    <div class="price-card rv rv-d3">
+      <div class="price-name">정기권</div>
+      <div class="price-amount">35만원</div>
+      <div class="price-per">월 무제한 · 자동결제</div>
+      <p class="price-desc">꾸준한 수련을 위한 추천 멤버십</p>
+      <hr class="price-line">
+      <ul class="price-feat">
+        <li>그룹 수업 무제한</li>
+        <li>프로그램 자유 선택</li>
+        <li>우선 예약 가능</li>
+        <li>개인 락커 + 주차 1시간</li>
+      </ul>
+      <a href="https://pf.kakao.com/_aura" class="price-cta price-cta-line" target="_blank" rel="noopener noreferrer">가입 문의</a>
+    </div>
+    <div class="price-card rv rv-d4">
+      <div class="price-name">프라이빗</div>
+      <div class="price-amount">8만원</div>
+      <div class="price-per">1회 · 60분 1:1 세션</div>
+      <p class="price-desc">목표 맞춤 개인 지도</p>
+      <hr class="price-line">
+      <ul class="price-feat">
+        <li>1:1 맞춤 프로그램</li>
+        <li>체형 분석 + 교정</li>
+        <li>시간 자유 조율</li>
+        <li>10회 패키지 70만원</li>
+      </ul>
+      <a href="https://pf.kakao.com/_aura" class="price-cta price-cta-line" target="_blank" rel="noopener noreferrer">예약 문의</a>
+    </div>
+  </div>
+  <p class="price-note rv rv-d2">모든 수업은 예약제로 운영됩니다 · VAT 포함 · 멤버십 변경 및 환불은 카카오톡으로 문의해 주세요</p>
+</section>
+
+<!-- GALLERY — MASONRY -->
+<section class="gallery rv" id="gallery">
+  <div class="gal-header"><div class="sec-label">Gallery</div><h2 class="sec-title">스튜디오 <strong>갤러리</strong></h2></div>
+  <div class="gal-grid">
+    <div class="gal-item gi1" data-cap="스튜디오 전경" data-hover="View" tabindex="0" role="button" aria-label="스튜디오 전경 보기"><div class="gi-inner"><div class="ph ph-dark"><svg viewBox="0 0 24 24"><path d="M23 19a2 2 0 01-2 2H3a2 2 0 01-2-2V8a2 2 0 012-2h4l2-3h6l2 3h4a2 2 0 012 2z"/><circle cx="12" cy="13" r="4"/></svg><span>전경</span></div></div><div class="gal-overlay"><span class="gal-cap">스튜디오 전경</span></div></div>
+    <div class="gal-item gi2" data-hover="View" data-cap="소품 디테일" tabindex="0" role="button" aria-label="소품 디테일 보기"><div class="gi-inner"><div class="ph ph-dark"><svg viewBox="0 0 24 24"><path d="M23 19a2 2 0 01-2 2H3a2 2 0 01-2-2V8a2 2 0 012-2h4l2-3h6l2 3h4a2 2 0 012 2z"/><circle cx="12" cy="13" r="4"/></svg><span>소품</span></div></div><div class="gal-overlay"><span class="gal-cap">소품 디테일</span></div></div>
+    <div class="gal-item gi3" data-hover="View" data-cap="수업 장면" tabindex="0" role="button" aria-label="수업 장면 보기"><div class="gi-inner"><div class="ph ph-dark"><svg viewBox="0 0 24 24"><path d="M23 19a2 2 0 01-2 2H3a2 2 0 01-2-2V8a2 2 0 012-2h4l2-3h6l2 3h4a2 2 0 012 2z"/><circle cx="12" cy="13" r="4"/></svg><span>수업</span></div></div><div class="gal-overlay"><span class="gal-cap">수업 장면</span></div></div>
+    <div class="gal-item gi4" data-hover="View" data-cap="명상 공간" tabindex="0" role="button" aria-label="명상 공간 보기"><div class="gi-inner"><div class="ph ph-dark"><svg viewBox="0 0 24 24"><path d="M23 19a2 2 0 01-2 2H3a2 2 0 01-2-2V8a2 2 0 012-2h4l2-3h6l2 3h4a2 2 0 012 2z"/><circle cx="12" cy="13" r="4"/></svg><span>명상</span></div></div><div class="gal-overlay"><span class="gal-cap">명상 공간</span></div></div>
+    <div class="gal-item gi5" data-hover="View" data-cap="자연 채광" tabindex="0" role="button" aria-label="자연 채광 보기"><div class="gi-inner"><div class="ph ph-dark"><svg viewBox="0 0 24 24"><path d="M23 19a2 2 0 01-2 2H3a2 2 0 01-2-2V8a2 2 0 012-2h4l2-3h6l2 3h4a2 2 0 012 2z"/><circle cx="12" cy="13" r="4"/></svg><span>채광</span></div></div><div class="gal-overlay"><span class="gal-cap">자연 채광</span></div></div>
+    <div class="gal-item gi6" data-hover="View" data-cap="라운지" tabindex="0" role="button" aria-label="라운지 보기"><div class="gi-inner"><div class="ph ph-dark"><svg viewBox="0 0 24 24"><path d="M23 19a2 2 0 01-2 2H3a2 2 0 01-2-2V8a2 2 0 012-2h4l2-3h6l2 3h4a2 2 0 012 2z"/><circle cx="12" cy="13" r="4"/></svg><span>라운지</span></div></div><div class="gal-overlay"><span class="gal-cap">라운지</span></div></div>
+    <div class="gal-item gi7" data-hover="View" data-cap="빈야사 플로우" tabindex="0" role="button" aria-label="빈야사 플로우 보기"><div class="gi-inner"><div class="ph ph-dark"><svg viewBox="0 0 24 24"><path d="M23 19a2 2 0 01-2 2H3a2 2 0 01-2-2V8a2 2 0 012-2h4l2-3h6l2 3h4a2 2 0 012 2z"/><circle cx="12" cy="13" r="4"/></svg><span>빈야사</span></div></div><div class="gal-overlay"><span class="gal-cap">빈야사 플로우</span></div></div>
+    <div class="gal-item gi8" data-hover="View" data-cap="소도구 수업" tabindex="0" role="button" aria-label="소도구 수업 보기"><div class="gi-inner"><div class="ph ph-dark"><svg viewBox="0 0 24 24"><path d="M23 19a2 2 0 01-2 2H3a2 2 0 01-2-2V8a2 2 0 012-2h4l2-3h6l2 3h4a2 2 0 012 2z"/><circle cx="12" cy="13" r="4"/></svg><span>소도구</span></div></div><div class="gal-overlay"><span class="gal-cap">소도구 수업</span></div></div>
+  </div>
+</section>
+
+<!-- LIGHTBOX -->
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="이미지 뷰어">
+  <div class="lb-bg" id="lbBg"></div>
+  <span class="lb-counter" id="lbCounter"></span>
+  <button class="lb-close" id="lbClose" aria-label="닫기">&times;</button>
+  <button class="lb-nav lb-prev" id="lbPrev" aria-label="이전">&#8592;</button>
+  <button class="lb-nav lb-next" id="lbNext" aria-label="다음">&#8594;</button>
+  <div class="lb-inner" id="lbInner"></div>
+  <span class="lb-caption" id="lbCap"></span>
+</div>
+
+<!-- INSTRUCTORS -->
+<section class="instructors rv" id="instructors">
+  <div class="inst-header"><div class="sec-label">Instructors</div><h2 class="sec-title">강사 <strong>소개</strong></h2></div>
+  <div class="inst-grid">
+    <div class="inst-card rv rv-d1" data-hover="Profile">
+      <div class="inst-img"><div class="inst-img-inner ib1"><div class="ph"><svg viewBox="0 0 24 24"><path d="M23 19a2 2 0 01-2 2H3a2 2 0 01-2-2V8a2 2 0 012-2h4l2-3h6l2 3h4a2 2 0 012 2z"/><circle cx="12" cy="13" r="4"/></svg><span>강사</span></div></div>
+        <div class="inst-overlay"><div class="inst-overlay-text">"요가는 매트 위에서 시작하지만,<br>삶 속에서 완성됩니다."</div></div></div>
+      <div class="inst-info"><h3>윤서현</h3><div class="inst-role">Head Instructor · Vinyasa</div><div class="inst-tags"><span class="inst-tag">빈야사</span><span class="inst-tag">아쉬탕가</span><span class="inst-tag">12년</span></div></div>
+    </div>
+    <div class="inst-card rv rv-d2" data-hover="Profile">
+      <div class="inst-img"><div class="inst-img-inner ib2"><div class="ph"><svg viewBox="0 0 24 24"><path d="M23 19a2 2 0 01-2 2H3a2 2 0 01-2-2V8a2 2 0 012-2h4l2-3h6l2 3h4a2 2 0 012 2z"/><circle cx="12" cy="13" r="4"/></svg><span>강사</span></div></div>
+        <div class="inst-overlay"><div class="inst-overlay-text">"호흡 하나로 세상이 달라져요.<br>그 순간을 함께 나누고 싶어요."</div></div></div>
+      <div class="inst-info"><h3>김지은</h3><div class="inst-role">Senior Instructor · Hatha</div><div class="inst-tags"><span class="inst-tag">하타</span><span class="inst-tag">인요가</span><span class="inst-tag">10년</span></div></div>
+    </div>
+    <div class="inst-card rv rv-d3" data-hover="Profile">
+      <div class="inst-img"><div class="inst-img-inner ib3"><div class="ph"><svg viewBox="0 0 24 24"><path d="M23 19a2 2 0 01-2 2H3a2 2 0 01-2-2V8a2 2 0 012-2h4l2-3h6l2 3h4a2 2 0 012 2z"/><circle cx="12" cy="13" r="4"/></svg><span>강사</span></div></div>
+        <div class="inst-overlay"><div class="inst-overlay-text">"명상은 생각을 멈추는 게 아니라,<br>바라보는 연습이에요."</div></div></div>
+      <div class="inst-info"><h3>박하린</h3><div class="inst-role">Instructor · Meditation</div><div class="inst-tags"><span class="inst-tag">명상</span><span class="inst-tag">호흡법</span><span class="inst-tag">8년</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- QUOTE BREAK -->
+<div class="quote-break rv">
+  <div class="quote-break-inner">
+    <p class="quote-break-text">"몸이 <strong>유연</strong>해지면<br>마음도 유연해집니다."</p>
+    <span class="quote-break-src">AURA Philosophy</span>
+  </div>
+</div>
+
+<!-- REVIEWS -->
+<section class="reviews rv" id="reviews">
+  <div class="rv-header"><div class="sec-label">Reviews</div><h2 class="sec-title">수강 <strong>후기</strong></h2></div>
+  <div class="rv-slider">
+    <div class="rv-track" id="rvTrack">
+      <div class="rv-card"><div class="rv-card-inner"><p class="rv-text">직장 스트레스로 어깨가 늘 뭉쳐있었는데, 한 달 다니면서 확실히 달라졌어요. 서현 선생님 빈야사 수업 강추합니다.</p><div class="rv-who"><div class="rv-avatar">이</div><div><span class="rv-name">이** 님</span><span class="rv-src">네이버 플레이스</span></div></div></div></div>
+      <div class="rv-card"><div class="rv-card-inner"><p class="rv-text">요가 완전 초보인데 하타 수업이 정말 친절해요. 8명이라 선생님이 자세 하나하나 봐주시니까 안심이 됩니다.</p><div class="rv-who"><div class="rv-avatar">김</div><div><span class="rv-name">김** 님</span><span class="rv-src">카카오맵</span></div></div></div></div>
+      <div class="rv-card"><div class="rv-card-inner"><p class="rv-text">명상 수업 후에 잠이 너무 잘 와요. 공간도 조용하고 향도 좋고... 이 가격에 이 퀄리티는 진짜 대박입니다.</p><div class="rv-who"><div class="rv-avatar">박</div><div><span class="rv-name">박** 님</span><span class="rv-src">Google</span></div></div></div></div>
+      <div class="rv-card"><div class="rv-card-inner"><p class="rv-text">프라이빗 세션으로 체형 교정 받고 있어요. 골반 틀어짐이 많이 좋아졌고, 일상 자세도 신경 쓰게 됐어요.</p><div class="rv-who"><div class="rv-avatar">최</div><div><span class="rv-name">최** 님</span><span class="rv-src">네이버 플레이스</span></div></div></div></div>
+    </div>
+  </div>
+  <div class="rv-controls">
+    <button class="rv-arrow" id="rvPrev" aria-label="이전 후기">&#8592;</button>
+    <div class="rv-dots" id="rvDots"></div>
+    <div class="rv-bar"><div class="rv-bar-fill" id="rvBarFill"></div></div>
+    <button class="rv-arrow" id="rvNext" aria-label="다음 후기">&#8594;</button>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq rv" id="faq">
+  <div class="faq-header"><div class="sec-label">FAQ</div><h2 class="sec-title">자주 묻는 <strong>질문</strong></h2></div>
+  <div class="faq-list">
+    <div class="faq-item"><button class="faq-q"><span>요가를 처음 하는데 괜찮을까요?</span><span class="faq-q-icon"></span></button><div class="faq-a"><div class="faq-a-inner">물론이요! 하타 요가 수업이 초보자에게 적합합니다. 기초 호흡법과 기본 자세부터 차근차근 알려드립니다.</div></div></div>
+    <div class="faq-item"><button class="faq-q"><span>준비물이 따로 있나요?</span><span class="faq-q-icon"></span></button><div class="faq-a"><div class="faq-a-inner">편한 운동복만 준비해 주세요. 요가 매트, 블록, 스트랩 등 모든 소도구는 스튜디오에서 제공합니다.</div></div></div>
+    <div class="faq-item"><button class="faq-q"><span>체험 수업은 어떻게 신청하나요?</span><span class="faq-q-icon"></span></button><div class="faq-a"><div class="faq-a-inner">카카오톡 채널(@aura)로 신청해 주세요. 원하시는 프로그램과 날짜를 말씀해 주시면 안내드립니다.</div></div></div>
+    <div class="faq-item"><button class="faq-q"><span>주차가 가능한가요?</span><span class="faq-q-icon"></span></button><div class="faq-a"><div class="faq-a-inner">건물 내 주차장 이용 가능합니다. 수업 시간에 맞춰 1시간 무료 주차가 제공됩니다.</div></div></div>
+  </div>
+</section>
+
+<!-- INFO + MAP -->
+<section class="info rv" id="info">
+  <div class="info-header"><div class="sec-label">Visit Us</div><h2 class="sec-title">찾아오시는 <strong>길</strong></h2></div>
+  <div class="info-layout">
+    <div class="info-left">
+      <div class="info-col rv rv-d1"><h4>Address</h4><p>서울 강남구 청담동 00-00<br>압구정로데오역 3번출구 5분</p><div class="info-btns"><a href="https://map.kakao.com" class="btn-line" target="_blank" rel="noopener noreferrer">카카오맵 →</a><a href="https://pf.kakao.com/_aura" class="btn-fill" target="_blank" rel="noopener noreferrer">체험 신청</a></div></div>
+      <div class="info-col rv rv-d2"><h4>Hours</h4><p>월 — 금&nbsp;&nbsp;07:00 – 22:00<br>토 — 일&nbsp;&nbsp;09:00 – 18:00<br>공휴일&nbsp;&nbsp;10:00 – 16:00</p></div>
+      <div class="info-col rv rv-d3 info-note"><h4>Note</h4><p>소수정원 예약제 · 첫 수업 무료 체험 · 주차 1시간 무료 · 개인 락커 제공</p></div>
+    </div>
+    <a href="https://map.kakao.com/link/to/AURA,37.5242,127.0470" class="map-ph rv rv-d2" target="_blank" rel="noopener noreferrer" data-hover="Open Map">
+      <div class="map-ph-inner"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg><p>카카오맵에서 보기</p><small>청담동 · 압구정로데오역 3번출구 5분</small></div>
+    </a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="ft-inner">
+    <a class="ft-logo" href="#">aura</a>
+    <span class="ft-copy">&copy; <span id="yr">2026</span> AURA — Yoga Studio, Cheongdam</span>
+    <div class="ft-right"><a href="https://instagram.com/aura.yoga" class="ft-link" target="_blank" rel="noopener noreferrer">@aura.yoga</a><a href="#hero" class="ft-top" title="맨 위로">↑</a></div>
+  </div>
+</footer>
+
+<!-- FLOATING -->
+<a href="#hero" class="back-top" id="backTop" aria-label="맨 위로">↑</a>
+<a href="https://pf.kakao.com/_aura" class="kakao-float" target="_blank" rel="noopener noreferrer" aria-label="카카오톡">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3C6.48 3 2 6.58 2 11c0 2.83 1.88 5.32 4.71 6.73-.17.65-.63 2.37-.72 2.74-.11.46.17.46.36.33.15-.1 2.37-1.62 3.33-2.27.74.1 1.51.17 2.32.17 5.52 0 10-3.58 10-8s-4.48-8-10-8z"/></svg>
+</a>
+<div class="mob-bar"><div class="mb-inner"><a href="tel:02-000-0000" class="m-line">전화</a><a href="https://pf.kakao.com/_aura" class="m-fill" target="_blank" rel="noopener noreferrer">체험 신청</a></div></div>
+
+<!-- ============================================================
+   JAVASCRIPT
+   ============================================================ -->
+<script>
+/* COPYRIGHT YEAR */
+document.getElementById('yr').textContent=new Date().getFullYear();
+
+/* LOADER */
+const loader=document.getElementById('loader');
+window.addEventListener('load',()=>{setTimeout(()=>loader.classList.add('done'),2400)});
+document.body.style.overflow='hidden';setTimeout(()=>{document.body.style.overflow=''},2600);
+
+/* CURSOR */
+const isMob=window.matchMedia('(max-width:768px)').matches||'ontouchstart'in window;
+if(!isMob){
+  const cur=document.getElementById('cur'),ring=document.getElementById('ring'),curLabel=document.getElementById('curLabel');
+  let mx=0,my=0,cx=0,cy=0,rx=0,ry=0;
+  document.addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY},{passive:true});
+  (function loop(){cx+=(mx-cx)*.22;cy+=(my-cy)*.22;rx+=(mx-rx)*.06;ry+=(my-ry)*.06;
+    cur.style.transform=`translate(${cx-2.5}px,${cy-2.5}px)`;
+    ring.style.transform=`translate(${rx-18}px,${ry-18}px)`;
+    curLabel.style.transform=`translate(${rx+24}px,${ry-8}px)`;
+    requestAnimationFrame(loop)})();
+  document.querySelectorAll('[data-hover]').forEach(el=>{
+    el.addEventListener('mouseenter',()=>{ring.classList.add('hover');curLabel.textContent=el.dataset.hover;curLabel.classList.add('show')});
+    el.addEventListener('mouseleave',()=>{ring.classList.remove('hover');curLabel.classList.remove('show')})});
+  document.querySelectorAll('.nav-link,.nav-logo,.nav-cta,.btn-line,.btn-fill,.kakao-float,.insta-btn,.hero-btn-fill,.hero-btn-ghost,.rv-arrow,.ft-top,.back-top,.prog-arrow,.price-cta,.faq-q').forEach(el=>{
+    el.addEventListener('mouseenter',()=>ring.classList.add('nav-hover'));
+    el.addEventListener('mouseleave',()=>ring.classList.remove('nav-hover'))});
+}
+
+/* MOBILE MENU */
+const hbg=document.getElementById('hbg'),mobMenu=document.getElementById('mobMenu');
+hbg.addEventListener('click',()=>{const o=!mobMenu.classList.contains('open');mobMenu.classList.toggle('open');hbg.classList.toggle('open');hbg.setAttribute('aria-expanded',o);document.body.style.overflow=o?'hidden':''});
+function closeMob(){mobMenu.classList.remove('open');hbg.classList.remove('open');hbg.setAttribute('aria-expanded','false');document.body.style.overflow=''}
+document.querySelectorAll('[data-close]').forEach(l=>l.addEventListener('click',closeMob));
+
+/* SCROLL */
+const navEl=document.getElementById('nav'),heroBg=document.getElementById('heroBg'),scrollBar=document.getElementById('scrollBar'),backTop=document.getElementById('backTop');
+const secs=document.querySelectorAll('section[id]'),navLinks=document.querySelectorAll('.nav-link');
+let lastSy=0,scrollTicking=false;
+function onScroll(){const sy=window.scrollY,docH=document.documentElement.scrollHeight-window.innerHeight;
+  navEl.classList.toggle('scrolled',sy>80);
+  if(isMob&&sy>300)navEl.classList.toggle('nav-hidden',sy>lastSy&&sy-lastSy>8);else navEl.classList.remove('nav-hidden');
+  scrollBar.style.transform=`scaleX(${Math.min(sy/docH,1)})`;
+  backTop.classList.toggle('visible',sy>600);
+  let curSec='';secs.forEach(s=>{if(sy>=s.offsetTop-200)curSec=s.id});
+  navLinks.forEach(l=>l.classList.toggle('active',l.getAttribute('href')==='#'+curSec));
+  if(heroBg&&sy<window.innerHeight*1.2)heroBg.style.transform=`translateY(${sy*.12}px)`;
+  lastSy=sy;scrollTicking=false;if(typeof updateDots==='function')updateDots(sy)}
+window.addEventListener('scroll',()=>{if(!scrollTicking){requestAnimationFrame(onScroll);scrollTicking=true}},{passive:true});
+
+/* REVEAL */
+const revObs=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('show')})},{threshold:.15});
+document.querySelectorAll('.rv,.rv-left,.rv-right,.rv-scale').forEach(el=>revObs.observe(el));
+
+/* COUNT UP */
+const countObs=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){const el=e.target,t=+el.dataset.count;let c=0;const step=()=>{c+=Math.ceil(t/40);if(c>=t){el.textContent=t;return}el.textContent=c;setTimeout(step,40)};step();countObs.unobserve(el)}})},{threshold:.5});
+document.querySelectorAll('[data-count]').forEach(el=>countObs.observe(el));
+
+/* PROGRAM SCROLL */
+const progScroll=document.getElementById('progScroll');
+document.getElementById('progPrev').onclick=()=>progScroll.scrollBy({left:-340,behavior:'smooth'});
+document.getElementById('progNext').onclick=()=>progScroll.scrollBy({left:340,behavior:'smooth'});
+
+/* GALLERY LIGHTBOX */
+const lb=document.getElementById('lb'),lbInner=document.getElementById('lbInner'),lbCounter=document.getElementById('lbCounter'),lbCap=document.getElementById('lbCap');
+const galItems=document.querySelectorAll('.gal-item');
+const lbItems=[];let lbIdx=0;
+galItems.forEach((el,i)=>{lbItems.push({cap:el.dataset.cap||''});el.addEventListener('click',()=>{lbIdx=i;lbShow()});el.addEventListener('keydown',e=>{if(e.key==='Enter'){lbIdx=i;lbShow()}})});
+function lbShow(){lb.classList.add('open');document.body.style.overflow='hidden';lbCounter.textContent=`${String(lbIdx+1).padStart(2,'0')} / ${lbItems.length}`;lbCap.textContent=lbItems[lbIdx].cap;const kk=document.querySelector('.kakao-float');if(kk)kk.style.display='none';setTimeout(()=>{const fc=document.getElementById('lbClose');if(fc)fc.focus()},100)}
+function lbHide(){lb.classList.remove('open');document.body.style.overflow='';const kk=document.querySelector('.kakao-float');if(kk)kk.style.display='';if(lbTrigger){lbTrigger.focus();lbTrigger=null}}
+let lbTrigger=null;
+galItems.forEach((el,i)=>{el.addEventListener('click',()=>{lbTrigger=el})});
+document.getElementById('lbClose').onclick=lbHide;document.getElementById('lbBg').onclick=lbHide;
+document.getElementById('lbPrev').onclick=()=>{lbIdx=(lbIdx-1+lbItems.length)%lbItems.length;lbShow()};
+document.getElementById('lbNext').onclick=()=>{lbIdx=(lbIdx+1)%lbItems.length;lbShow()};
+let lbTx=0;lb.addEventListener('touchstart',e=>{lbTx=e.touches[0].clientX},{passive:true});
+lb.addEventListener('touchend',e=>{const d=lbTx-e.changedTouches[0].clientX;if(Math.abs(d)>40){lbIdx=(lbIdx+(d>0?1:-1)+lbItems.length)%lbItems.length;lbShow()}},{passive:true});
+
+/* REVIEW CAROUSEL */
+const rvTrack=document.getElementById('rvTrack'),rvDotsWrap=document.getElementById('rvDots'),rvBarFill=document.getElementById('rvBarFill');
+const rvCards=rvTrack.children;let rvIdx=0;
+for(let i=0;i<rvCards.length;i++){const d=document.createElement('button');d.className='rv-dot'+(i===0?' active':'');d.setAttribute('aria-label',`후기 ${i+1}`);d.onclick=()=>{rvGo(i);resetRv()};rvDotsWrap.appendChild(d)}
+const rvDots=rvDotsWrap.querySelectorAll('.rv-dot');
+function rvGo(i){rvIdx=i;rvTrack.style.transform=`translateX(-${i*100}%)`;rvDots.forEach((d,j)=>d.classList.toggle('active',j===i))}
+document.getElementById('rvPrev').onclick=()=>{rvGo((rvIdx-1+rvCards.length)%rvCards.length);resetRv()};
+document.getElementById('rvNext').onclick=()=>{rvGo((rvIdx+1)%rvCards.length);resetRv()};
+let rvAuto,rvProg,rvStart;
+function startRv(){rvStart=performance.now();rvAuto=setInterval(()=>{rvGo((rvIdx+1)%rvCards.length);rvStart=performance.now()},6000);(function tick(){rvProg=requestAnimationFrame(tick);rvBarFill.style.width=Math.min((performance.now()-rvStart)/6000,1)*100+'%'})()}
+function resetRv(){clearInterval(rvAuto);cancelAnimationFrame(rvProg);rvStart=performance.now();startRv()}
+startRv();
+let rvTx=0;rvTrack.addEventListener('touchstart',e=>{rvTx=e.touches[0].clientX},{passive:true});
+rvTrack.addEventListener('touchend',e=>{const d=rvTx-e.changedTouches[0].clientX;if(Math.abs(d)>40){rvGo((rvIdx+(d>0?1:-1)+rvCards.length)%rvCards.length);resetRv()}},{passive:true});
+
+/* PAGE VISIBILITY */
+document.addEventListener('visibilitychange',()=>{
+  if(document.hidden){clearInterval(rvAuto);cancelAnimationFrame(rvProg)}
+  else{resetRv()}});
+
+/* FAQ */
+document.querySelectorAll('.faq-q').forEach((btn,i)=>{
+  const item=btn.parentElement;const ans=item.querySelector('.faq-a');
+  const aid='faq-a-'+i;ans.id=aid;btn.setAttribute('aria-controls',aid);btn.setAttribute('aria-expanded','false');
+  btn.addEventListener('click',()=>{const was=item.classList.contains('open');document.querySelectorAll('.faq-item.open').forEach(el=>{el.classList.remove('open');el.querySelector('.faq-q').setAttribute('aria-expanded','false')});if(!was){item.classList.add('open');btn.setAttribute('aria-expanded','true')}})});
+
+/* SMOOTH ANCHOR */
+document.querySelectorAll('a[href^="#"]').forEach(a=>{a.addEventListener('click',function(e){const h=this.getAttribute('href');if(h==='#')return;e.preventDefault();const t=document.querySelector(h);if(t)t.scrollIntoView({behavior:'smooth',block:'start'})})});
+
+/* SEC DOTS */
+const secDots=document.getElementById('secDots'),dotBtns=secDots.querySelectorAll('.sec-dot');
+dotBtns.forEach(dot=>{dot.addEventListener('click',()=>{const t=document.getElementById(dot.dataset.target);if(t)t.scrollIntoView({behavior:'smooth',block:'start'})})});
+function updateDots(sy){secDots.classList.toggle('visible',sy>window.innerHeight*.5);let a='hero';secs.forEach(s=>{if(sy>=s.offsetTop-300)a=s.id});dotBtns.forEach(d=>d.classList.toggle('active',d.dataset.target===a))}
+requestAnimationFrame(()=>updateDots(window.scrollY));
+
+/* TOAST */
+const toast=document.getElementById('toast');let toastShown=false;
+function showToast(){if(toastShown)return;toastShown=true;toast.classList.add('show');setTimeout(()=>toast.classList.remove('show'),8000)}
+document.getElementById('toastClose').onclick=()=>toast.classList.remove('show');
+setTimeout(showToast,30000);
+
+/* KEYBOARD */
+document.addEventListener('keydown',e=>{
+  if(e.key==='Escape'){if(lb.classList.contains('open')){lbHide();return}if(toast.classList.contains('show')){toast.classList.remove('show');return}if(mobMenu.classList.contains('open')){closeMob();return}}
+  if(lb.classList.contains('open')){if(e.key==='ArrowLeft')document.getElementById('lbPrev').click();if(e.key==='ArrowRight')document.getElementById('lbNext').click()}
+});
+
+/* ASSET PROTECTION */
+document.querySelectorAll('.hero-bg-inner,.about-img-main,.about-img-sub,.inst-img,.gal-item,.lb-inner,img').forEach(el=>{
+  el.addEventListener('contextmenu',e=>e.preventDefault());
+  el.addEventListener('dragstart',e=>e.preventDefault())});
+
+/* 3D TILT (desktop only) */
+if(!isMob){
+  document.querySelectorAll('.prog-card,.inst-card,.price-card').forEach(card=>{
+    card.classList.add('tilt-card');
+    card.addEventListener('mousemove',e=>{
+      const r=card.getBoundingClientRect();
+      const x=(e.clientX-r.left)/r.width-.5;
+      const y=(e.clientY-r.top)/r.height-.5;
+      card.style.transform=`perspective(600px) rotateY(${x*6}deg) rotateX(${-y*6}deg) translateY(-6px)`;
+    });
+    card.addEventListener('mouseleave',()=>{card.style.transform=''});
+  });
+}
+
+/* MAGNETIC BUTTON (desktop only) */
+if(!isMob){
+  document.querySelectorAll('.hero-btn-fill,.nav-cta,.price-cta-fill,.btn-fill').forEach(btn=>{
+    btn.classList.add('mag-btn');
+    btn.addEventListener('mousemove',e=>{
+      const r=btn.getBoundingClientRect();
+      const x=e.clientX-r.left-r.width/2;
+      const y=e.clientY-r.top-r.height/2;
+      btn.style.transform=`translate(${x*.2}px,${y*.2}px)`;
+    });
+    btn.addEventListener('mouseleave',()=>{btn.style.transform=''});
+  });
+}
+
+/* LIGHTBOX FOCUS TRAP */
+lb.addEventListener('keydown',e=>{
+  if(e.key!=='Tab')return;
+  const focusable=lb.querySelectorAll('button:not([disabled])');
+  if(!focusable.length)return;
+  const first=focusable[0],last=focusable[focusable.length-1];
+  if(e.shiftKey){if(document.activeElement===first){e.preventDefault();last.focus()}}
+  else{if(document.activeElement===last){e.preventDefault();first.focus()}}
+});
+
+// 포트폴리오 프리뷰용 자동스크롤 (iframe 안에 있을 때만 작동)
+var _isPreview=false;try{_isPreview=window.self!==window.top}catch(e){_isPreview=true}
+if(_isPreview){
+  var _asY=0,_asSpd=2.25,_asPaused=false;
+  function _asRun(){
+    if(!_asPaused){
+      _asY+=_asSpd;
+      var maxY=document.documentElement.scrollHeight-window.innerHeight;
+      if(_asY>=maxY){_asPaused=true;setTimeout(function(){_asY=0;window.scrollTo(0,0);_asPaused=false},800)}
+      else{window.scrollTo(0,_asY)}
+    }
+    requestAnimationFrame(_asRun);
+  }
+  window.addEventListener('load',function(){setTimeout(_asRun,1200)});
+}
+</script>
+</body>
+</html>
