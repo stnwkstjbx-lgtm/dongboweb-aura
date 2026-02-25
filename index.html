@@ -105,17 +105,6 @@ a,button{cursor:none}
 .cur-label{position:fixed;pointer-events:none;z-index:10001;font-family:var(--sans);font-size:.42rem;color:var(--coral);letter-spacing:.18em;text-transform:uppercase;opacity:0;transition:opacity .35s;font-weight:400}
 .cur-label.show{opacity:1}
 
-/* ============================================================
-   PLACEHOLDER
-   ============================================================ */
-.ph{display:flex;flex-direction:column;align-items:center;justify-content:center;width:100%;height:100%;gap:6px;position:relative;overflow:hidden;background:var(--bg2)}
-.ph::after{content:'';position:absolute;inset:0;background:linear-gradient(105deg,transparent 40%,rgba(232,131,107,.04) 50%,transparent 60%);animation:shimmer 2.4s infinite;background-size:200% 100%}
-@keyframes shimmer{0%{background-position:200% 0}100%{background-position:-200% 0}}
-.ph svg{width:22px;height:22px;fill:none;stroke:var(--dim3);stroke-width:.8}
-.ph span{font-size:.38rem;letter-spacing:.18em;text-transform:uppercase;color:var(--dim3);font-weight:300}
-.ph-dark{background:var(--fg)}
-.ph-dark svg{stroke:rgba(255,255,255,.1)}
-.ph-dark span{color:rgba(255,255,255,.06)}
 
 section{contain:layout style paint}
 
@@ -160,7 +149,7 @@ nav.scrolled{padding:14px 48px;background:rgba(254,254,254,.92);backdrop-filter:
    ============================================================ */
 .hero{position:relative;min-height:100vh;min-height:100dvh;overflow:hidden;display:flex;align-items:flex-end}
 .hero-bg{position:absolute;inset:0;transition:transform .06s linear}
-.hero-bg-inner{width:100%;height:100%;background:var(--bg3)}
+.hero-bg-inner{width:100%;height:100%;background:url('https://images.unsplash.com/photo-1545389336-cf090694435e?w=1200&q=80') center/cover no-repeat}
 .hero-overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(26,24,22,0) 30%,rgba(26,24,22,.55) 100%);z-index:1}
 .hero-content{position:relative;z-index:2;padding:0 max(48px,6vw) 64px;width:100%;max-width:800px}
 .hero-over{font-family:var(--sans);font-size:.46rem;letter-spacing:.5em;text-transform:uppercase;color:rgba(255,255,255,.55);margin-bottom:18px;display:flex;align-items:center;gap:10px;opacity:0;animation:hUp .9s .5s var(--ease) forwards}
@@ -218,9 +207,8 @@ nav.scrolled{padding:14px 48px;background:rgba(254,254,254,.92);backdrop-filter:
 .about-quote strong{font-weight:500;color:var(--coral)}
 .about-body{font-size:.72rem;color:var(--dim);line-height:2.4;font-weight:200}
 .about-imgs{display:grid;grid-template-columns:3fr 2fr;gap:12px;margin-bottom:48px}
-.about-img-main{aspect-ratio:16/10;background:var(--bg3);border-radius:var(--round-lg);overflow:hidden}
-.about-img-sub{aspect-ratio:3/4;background:var(--coral-light);border-radius:var(--round-lg);overflow:hidden}
-.about-img-main:hover .ph,.about-img-sub:hover .ph{opacity:.9}
+.about-img-main{aspect-ratio:16/10;background:url('https://images.unsplash.com/photo-1447452001602-7090c7ab2db3?w=800&q=80') center/cover no-repeat;border-radius:var(--round-lg);overflow:hidden}
+.about-img-sub{aspect-ratio:3/4;background:url('https://images.unsplash.com/photo-1591228127791-8e2eaef098d3?w=800&q=80') center/cover no-repeat;border-radius:var(--round-lg);overflow:hidden}
 .about-bottom{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;max-width:720px;margin:0 auto;padding-top:40px;border-top:1px solid var(--border2)}
 .stat{text-align:center;padding:16px 0}
 .stat-num{font-family:var(--sans);font-size:clamp(1.8rem,2.8vw,2.4rem);color:var(--coral);display:block;line-height:1.1;font-weight:600}
@@ -289,14 +277,14 @@ nav.scrolled{padding:14px 48px;background:rgba(254,254,254,.92);backdrop-filter:
 .gal-item:hover{z-index:2}
 .gi-inner{width:100%;height:100%;transition:transform .6s var(--ease)}
 .gal-item:hover .gi-inner{transform:scale(1.06)}
-.gi1{grid-column:span 2;grid-row:span 2;background:#2A2725}
-.gi2{background:#252220}
-.gi3{grid-row:span 2;background:#1F1D1B}
-.gi4{background:#2E2B28}
-.gi5{grid-column:span 2;background:#232120}
-.gi6{background:#282523}
-.gi7{grid-column:span 2;grid-row:span 2;background:#1C1A18}
-.gi8{background:#262320}
+.gi1{grid-column:span 2;grid-row:span 2;background:url('https://images.unsplash.com/photo-1593811167562-9cef47bfc4d7?w=800&q=80') center/cover no-repeat}
+.gi2{background:url('https://images.unsplash.com/photo-1603988363607-e1e4a66962c6?w=800&q=80') center/cover no-repeat}
+.gi3{grid-row:span 2;background:url('https://images.unsplash.com/photo-1508672019048-805c876b67e2?w=800&q=80') center/cover no-repeat}
+.gi4{background:url('https://images.unsplash.com/photo-1540497077202-7c8a3999166f?w=800&q=80') center/cover no-repeat}
+.gi5{grid-column:span 2;background:url('https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&q=80') center/cover no-repeat}
+.gi6{background:url('https://images.unsplash.com/photo-1549576490-b0b4831ef60a?w=800&q=80') center/cover no-repeat}
+.gi7{grid-column:span 2;grid-row:span 2;background:url('https://images.unsplash.com/photo-1518609878373-06d740f60d8b?w=800&q=80') center/cover no-repeat}
+.gi8{background:url('https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=800&q=80') center/cover no-repeat}
 .gal-overlay{position:absolute;inset:0;background:linear-gradient(transparent 40%,rgba(232,131,107,.5));opacity:0;transition:opacity .5s var(--ease);display:flex;align-items:flex-end;padding:16px;border-radius:var(--round)}
 .gal-item:hover .gal-overlay{opacity:1}
 .gal-cap{font-family:var(--sans);font-size:.5rem;color:#fff;letter-spacing:.08em;font-weight:400}
@@ -327,7 +315,7 @@ nav.scrolled{padding:14px 48px;background:rgba(254,254,254,.92);backdrop-filter:
 .inst-img{aspect-ratio:4/5;overflow:hidden;position:relative}
 .inst-img-inner{width:100%;height:100%;transition:transform .6s var(--ease)}
 .inst-card:hover .inst-img-inner{transform:scale(1.04)}
-.ib1{background:#F0EDEA}.ib2{background:#EBE8E5}.ib3{background:#E6E3E0}
+.ib1{background:url('https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=800&q=80') center/cover no-repeat}.ib2{background:url('https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=800&q=80') center/cover no-repeat}.ib3{background:url('https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?w=800&q=80') center/cover no-repeat}
 .inst-overlay{position:absolute;inset:0;background:linear-gradient(transparent 40%,rgba(26,24,22,.6));opacity:0;transition:opacity .5s var(--ease);display:flex;flex-direction:column;justify-content:flex-end;padding:22px}
 .inst-card:hover .inst-overlay{opacity:1}
 .inst-overlay-text{font-family:var(--body);font-size:.6rem;color:rgba(255,255,255,.85);font-weight:300;line-height:1.8;transform:translateY(8px);transition:transform .5s var(--ease)}
@@ -694,8 +682,8 @@ footer{padding:44px 48px;border-top:1px solid var(--border2)}
       <p class="about-body">아우라는 청담동에 위치한 소규모 프라이빗 요가 스튜디오입니다. 최대 8명의 소수정원 수업으로, 개인의 몸 상태와 목표에 맞춘 세심한 지도를 제공합니다. 화려한 동작이 아닌, 나 자신과 만나는 고요한 시간을 선물합니다.</p>
     </div>
     <div class="about-imgs rv rv-d2">
-      <div class="about-img-main" data-hover="Our Space"><div class="ph"><svg viewBox="0 0 24 24"><path d="M23 19a2 2 0 01-2 2H3a2 2 0 01-2-2V8a2 2 0 012-2h4l2-3h6l2 3h4a2 2 0 012 2z"/><circle cx="12" cy="13" r="4"/></svg><span>스튜디오 전경</span></div></div>
-      <div class="about-img-sub" data-hover="Detail"><div class="ph"><svg viewBox="0 0 24 24"><path d="M23 19a2 2 0 01-2 2H3a2 2 0 01-2-2V8a2 2 0 012-2h4l2-3h6l2 3h4a2 2 0 012 2z"/><circle cx="12" cy="13" r="4"/></svg><span>디테일</span></div></div>
+      <div class="about-img-main" data-hover="Our Space"></div>
+      <div class="about-img-sub" data-hover="Detail"></div>
     </div>
     <div class="about-bottom rv rv-d3">
       <div class="stat"><span class="stat-num" data-count="8">0</span><span class="stat-label">최대 인원</span></div>
@@ -712,12 +700,12 @@ footer{padding:44px 48px;border-top:1px solid var(--border2)}
     <div class="prog-arrows"><button class="prog-arrow" id="progPrev" aria-label="이전">&#8592;</button><button class="prog-arrow" id="progNext" aria-label="다음">&#8594;</button></div>
   </div>
   <div class="prog-scroll" id="progScroll">
-    <div class="prog-card"><div class="prog-img"><div class="prog-img-inner"><div class="ph"><svg viewBox="0 0 24 24"><path d="M23 19a2 2 0 01-2 2H3a2 2 0 01-2-2V8a2 2 0 012-2h4l2-3h6l2 3h4a2 2 0 012 2z"/><circle cx="12" cy="13" r="4"/></svg><span>빈야사</span></div></div><span class="prog-badge">Popular</span></div><div class="prog-body"><div class="prog-name">빈야사 플로우</div><span class="prog-name-en">Vinyasa Flow</span><p class="prog-desc">호흡과 움직임을 연결하는 유동적인 시퀀스. 체력과 유연성을 동시에 기릅니다.</p><div class="prog-tags"><span class="prog-tag">중급</span><span class="prog-tag">60분</span><span class="prog-tag">소수정원</span></div></div></div>
-    <div class="prog-card"><div class="prog-img"><div class="prog-img-inner"><div class="ph"><svg viewBox="0 0 24 24"><path d="M23 19a2 2 0 01-2 2H3a2 2 0 01-2-2V8a2 2 0 012-2h4l2-3h6l2 3h4a2 2 0 012 2z"/><circle cx="12" cy="13" r="4"/></svg><span>하타</span></div></div></div><div class="prog-body"><div class="prog-name">하타 요가</div><span class="prog-name-en">Hatha Yoga</span><p class="prog-desc">기본 아사나를 정확하게. 호흡과 정렬에 집중하는 정통 요가입니다.</p><div class="prog-tags"><span class="prog-tag">초급</span><span class="prog-tag">75분</span><span class="prog-tag">소수정원</span></div></div></div>
-    <div class="prog-card"><div class="prog-img"><div class="prog-img-inner"><div class="ph"><svg viewBox="0 0 24 24"><path d="M23 19a2 2 0 01-2 2H3a2 2 0 01-2-2V8a2 2 0 012-2h4l2-3h6l2 3h4a2 2 0 012 2z"/><circle cx="12" cy="13" r="4"/></svg><span>아쉬탕가</span></div></div><span class="prog-badge">Advanced</span></div><div class="prog-body"><div class="prog-name">아쉬탕가</div><span class="prog-name-en">Ashtanga</span><p class="prog-desc">정해진 시퀀스를 반복하며 수련하는 전통 방식. 강도 높은 체력 훈련.</p><div class="prog-tags"><span class="prog-tag">상급</span><span class="prog-tag">90분</span><span class="prog-tag">소수정원</span></div></div></div>
-    <div class="prog-card"><div class="prog-img"><div class="prog-img-inner"><div class="ph"><svg viewBox="0 0 24 24"><path d="M23 19a2 2 0 01-2 2H3a2 2 0 01-2-2V8a2 2 0 012-2h4l2-3h6l2 3h4a2 2 0 012 2z"/><circle cx="12" cy="13" r="4"/></svg><span>인요가</span></div></div></div><div class="prog-body"><div class="prog-name">인 요가</div><span class="prog-name-en">Yin Yoga</span><p class="prog-desc">3~5분 이상 자세를 유지하며 깊은 결합 조직을 이완합니다. 명상적 수련.</p><div class="prog-tags"><span class="prog-tag">전체</span><span class="prog-tag">75분</span><span class="prog-tag">소수정원</span></div></div></div>
-    <div class="prog-card"><div class="prog-img"><div class="prog-img-inner"><div class="ph"><svg viewBox="0 0 24 24"><path d="M23 19a2 2 0 01-2 2H3a2 2 0 01-2-2V8a2 2 0 012-2h4l2-3h6l2 3h4a2 2 0 012 2z"/><circle cx="12" cy="13" r="4"/></svg><span>명상</span></div></div></div><div class="prog-body"><div class="prog-name">명상 + 호흡</div><span class="prog-name-en">Meditation & Breathwork</span><p class="prog-desc">프라나야마와 마음챙김 명상. 스트레스 해소와 집중력 향상에 도움.</p><div class="prog-tags"><span class="prog-tag">전체</span><span class="prog-tag">50분</span><span class="prog-tag">소수정원</span></div></div></div>
-    <div class="prog-card"><div class="prog-img"><div class="prog-img-inner"><div class="ph"><svg viewBox="0 0 24 24"><path d="M23 19a2 2 0 01-2 2H3a2 2 0 01-2-2V8a2 2 0 012-2h4l2-3h6l2 3h4a2 2 0 012 2z"/><circle cx="12" cy="13" r="4"/></svg><span>프라이빗</span></div></div><span class="prog-badge">1:1</span></div><div class="prog-body"><div class="prog-name">프라이빗 세션</div><span class="prog-name-en">Private Session</span><p class="prog-desc">개인 맞춤 1:1 수업. 목표와 컨디션에 따라 프로그램을 설계합니다.</p><div class="prog-tags"><span class="prog-tag">맞춤</span><span class="prog-tag">60분</span><span class="prog-tag">1:1</span></div></div></div>
+    <div class="prog-card"><div class="prog-img"><div class="prog-img-inner" style="background:url('https://images.unsplash.com/photo-1545205597-3d9d02c29597?w=800&q=80') center/cover no-repeat"></div><span class="prog-badge">Popular</span></div><div class="prog-body"><div class="prog-name">빈야사 플로우</div><span class="prog-name-en">Vinyasa Flow</span><p class="prog-desc">호흡과 움직임을 연결하는 유동적인 시퀀스. 체력과 유연성을 동시에 기릅니다.</p><div class="prog-tags"><span class="prog-tag">중급</span><span class="prog-tag">60분</span><span class="prog-tag">소수정원</span></div></div></div>
+    <div class="prog-card"><div class="prog-img"><div class="prog-img-inner" style="background:url('https://images.unsplash.com/photo-1552196563-55cd4e45efb3?w=800&q=80') center/cover no-repeat"></div></div><div class="prog-body"><div class="prog-name">하타 요가</div><span class="prog-name-en">Hatha Yoga</span><p class="prog-desc">기본 아사나를 정확하게. 호흡과 정렬에 집중하는 정통 요가입니다.</p><div class="prog-tags"><span class="prog-tag">초급</span><span class="prog-tag">75분</span><span class="prog-tag">소수정원</span></div></div></div>
+    <div class="prog-card"><div class="prog-img"><div class="prog-img-inner" style="background:url('https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=800&q=80') center/cover no-repeat"></div><span class="prog-badge">Advanced</span></div><div class="prog-body"><div class="prog-name">아쉬탕가</div><span class="prog-name-en">Ashtanga</span><p class="prog-desc">정해진 시퀀스를 반복하며 수련하는 전통 방식. 강도 높은 체력 훈련.</p><div class="prog-tags"><span class="prog-tag">상급</span><span class="prog-tag">90분</span><span class="prog-tag">소수정원</span></div></div></div>
+    <div class="prog-card"><div class="prog-img"><div class="prog-img-inner" style="background:url('https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=800&q=80') center/cover no-repeat"></div></div><div class="prog-body"><div class="prog-name">인 요가</div><span class="prog-name-en">Yin Yoga</span><p class="prog-desc">3~5분 이상 자세를 유지하며 깊은 결합 조직을 이완합니다. 명상적 수련.</p><div class="prog-tags"><span class="prog-tag">전체</span><span class="prog-tag">75분</span><span class="prog-tag">소수정원</span></div></div></div>
+    <div class="prog-card"><div class="prog-img"><div class="prog-img-inner" style="background:url('https://images.unsplash.com/photo-1562088287-bde35a1ea917?w=800&q=80') center/cover no-repeat"></div></div><div class="prog-body"><div class="prog-name">명상 + 호흡</div><span class="prog-name-en">Meditation & Breathwork</span><p class="prog-desc">프라나야마와 마음챙김 명상. 스트레스 해소와 집중력 향상에 도움.</p><div class="prog-tags"><span class="prog-tag">전체</span><span class="prog-tag">50분</span><span class="prog-tag">소수정원</span></div></div></div>
+    <div class="prog-card"><div class="prog-img"><div class="prog-img-inner" style="background:url('https://images.unsplash.com/photo-1510894347713-fc3ed6fdf539?w=800&q=80') center/cover no-repeat"></div><span class="prog-badge">1:1</span></div><div class="prog-body"><div class="prog-name">프라이빗 세션</div><span class="prog-name-en">Private Session</span><p class="prog-desc">개인 맞춤 1:1 수업. 목표와 컨디션에 따라 프로그램을 설계합니다.</p><div class="prog-tags"><span class="prog-tag">맞춤</span><span class="prog-tag">60분</span><span class="prog-tag">1:1</span></div></div></div>
   </div>
 </section>
 
@@ -789,14 +777,14 @@ footer{padding:44px 48px;border-top:1px solid var(--border2)}
 <section class="gallery rv" id="gallery">
   <div class="gal-header"><div class="sec-label">Gallery</div><h2 class="sec-title">스튜디오 <strong>갤러리</strong></h2></div>
   <div class="gal-grid">
-    <div class="gal-item gi1" data-cap="스튜디오 전경" data-hover="View" tabindex="0" role="button" aria-label="스튜디오 전경 보기"><div class="gi-inner"><div class="ph ph-dark"><svg viewBox="0 0 24 24"><path d="M23 19a2 2 0 01-2 2H3a2 2 0 01-2-2V8a2 2 0 012-2h4l2-3h6l2 3h4a2 2 0 012 2z"/><circle cx="12" cy="13" r="4"/></svg><span>전경</span></div></div><div class="gal-overlay"><span class="gal-cap">스튜디오 전경</span></div></div>
-    <div class="gal-item gi2" data-hover="View" data-cap="소품 디테일" tabindex="0" role="button" aria-label="소품 디테일 보기"><div class="gi-inner"><div class="ph ph-dark"><svg viewBox="0 0 24 24"><path d="M23 19a2 2 0 01-2 2H3a2 2 0 01-2-2V8a2 2 0 012-2h4l2-3h6l2 3h4a2 2 0 012 2z"/><circle cx="12" cy="13" r="4"/></svg><span>소품</span></div></div><div class="gal-overlay"><span class="gal-cap">소품 디테일</span></div></div>
-    <div class="gal-item gi3" data-hover="View" data-cap="수업 장면" tabindex="0" role="button" aria-label="수업 장면 보기"><div class="gi-inner"><div class="ph ph-dark"><svg viewBox="0 0 24 24"><path d="M23 19a2 2 0 01-2 2H3a2 2 0 01-2-2V8a2 2 0 012-2h4l2-3h6l2 3h4a2 2 0 012 2z"/><circle cx="12" cy="13" r="4"/></svg><span>수업</span></div></div><div class="gal-overlay"><span class="gal-cap">수업 장면</span></div></div>
-    <div class="gal-item gi4" data-hover="View" data-cap="명상 공간" tabindex="0" role="button" aria-label="명상 공간 보기"><div class="gi-inner"><div class="ph ph-dark"><svg viewBox="0 0 24 24"><path d="M23 19a2 2 0 01-2 2H3a2 2 0 01-2-2V8a2 2 0 012-2h4l2-3h6l2 3h4a2 2 0 012 2z"/><circle cx="12" cy="13" r="4"/></svg><span>명상</span></div></div><div class="gal-overlay"><span class="gal-cap">명상 공간</span></div></div>
-    <div class="gal-item gi5" data-hover="View" data-cap="자연 채광" tabindex="0" role="button" aria-label="자연 채광 보기"><div class="gi-inner"><div class="ph ph-dark"><svg viewBox="0 0 24 24"><path d="M23 19a2 2 0 01-2 2H3a2 2 0 01-2-2V8a2 2 0 012-2h4l2-3h6l2 3h4a2 2 0 012 2z"/><circle cx="12" cy="13" r="4"/></svg><span>채광</span></div></div><div class="gal-overlay"><span class="gal-cap">자연 채광</span></div></div>
-    <div class="gal-item gi6" data-hover="View" data-cap="라운지" tabindex="0" role="button" aria-label="라운지 보기"><div class="gi-inner"><div class="ph ph-dark"><svg viewBox="0 0 24 24"><path d="M23 19a2 2 0 01-2 2H3a2 2 0 01-2-2V8a2 2 0 012-2h4l2-3h6l2 3h4a2 2 0 012 2z"/><circle cx="12" cy="13" r="4"/></svg><span>라운지</span></div></div><div class="gal-overlay"><span class="gal-cap">라운지</span></div></div>
-    <div class="gal-item gi7" data-hover="View" data-cap="빈야사 플로우" tabindex="0" role="button" aria-label="빈야사 플로우 보기"><div class="gi-inner"><div class="ph ph-dark"><svg viewBox="0 0 24 24"><path d="M23 19a2 2 0 01-2 2H3a2 2 0 01-2-2V8a2 2 0 012-2h4l2-3h6l2 3h4a2 2 0 012 2z"/><circle cx="12" cy="13" r="4"/></svg><span>빈야사</span></div></div><div class="gal-overlay"><span class="gal-cap">빈야사 플로우</span></div></div>
-    <div class="gal-item gi8" data-hover="View" data-cap="소도구 수업" tabindex="0" role="button" aria-label="소도구 수업 보기"><div class="gi-inner"><div class="ph ph-dark"><svg viewBox="0 0 24 24"><path d="M23 19a2 2 0 01-2 2H3a2 2 0 01-2-2V8a2 2 0 012-2h4l2-3h6l2 3h4a2 2 0 012 2z"/><circle cx="12" cy="13" r="4"/></svg><span>소도구</span></div></div><div class="gal-overlay"><span class="gal-cap">소도구 수업</span></div></div>
+    <div class="gal-item gi1" data-cap="스튜디오 전경" data-hover="View" tabindex="0" role="button" aria-label="스튜디오 전경 보기"><div class="gi-inner"></div><div class="gal-overlay"><span class="gal-cap">스튜디오 전경</span></div></div>
+    <div class="gal-item gi2" data-hover="View" data-cap="소품 디테일" tabindex="0" role="button" aria-label="소품 디테일 보기"><div class="gi-inner"></div><div class="gal-overlay"><span class="gal-cap">소품 디테일</span></div></div>
+    <div class="gal-item gi3" data-hover="View" data-cap="수업 장면" tabindex="0" role="button" aria-label="수업 장면 보기"><div class="gi-inner"></div><div class="gal-overlay"><span class="gal-cap">수업 장면</span></div></div>
+    <div class="gal-item gi4" data-hover="View" data-cap="명상 공간" tabindex="0" role="button" aria-label="명상 공간 보기"><div class="gi-inner"></div><div class="gal-overlay"><span class="gal-cap">명상 공간</span></div></div>
+    <div class="gal-item gi5" data-hover="View" data-cap="자연 채광" tabindex="0" role="button" aria-label="자연 채광 보기"><div class="gi-inner"></div><div class="gal-overlay"><span class="gal-cap">자연 채광</span></div></div>
+    <div class="gal-item gi6" data-hover="View" data-cap="라운지" tabindex="0" role="button" aria-label="라운지 보기"><div class="gi-inner"></div><div class="gal-overlay"><span class="gal-cap">라운지</span></div></div>
+    <div class="gal-item gi7" data-hover="View" data-cap="빈야사 플로우" tabindex="0" role="button" aria-label="빈야사 플로우 보기"><div class="gi-inner"></div><div class="gal-overlay"><span class="gal-cap">빈야사 플로우</span></div></div>
+    <div class="gal-item gi8" data-hover="View" data-cap="소도구 수업" tabindex="0" role="button" aria-label="소도구 수업 보기"><div class="gi-inner"></div><div class="gal-overlay"><span class="gal-cap">소도구 수업</span></div></div>
   </div>
 </section>
 
@@ -816,17 +804,17 @@ footer{padding:44px 48px;border-top:1px solid var(--border2)}
   <div class="inst-header"><div class="sec-label">Instructors</div><h2 class="sec-title">강사 <strong>소개</strong></h2></div>
   <div class="inst-grid">
     <div class="inst-card rv rv-d1" data-hover="Profile">
-      <div class="inst-img"><div class="inst-img-inner ib1"><div class="ph"><svg viewBox="0 0 24 24"><path d="M23 19a2 2 0 01-2 2H3a2 2 0 01-2-2V8a2 2 0 012-2h4l2-3h6l2 3h4a2 2 0 012 2z"/><circle cx="12" cy="13" r="4"/></svg><span>강사</span></div></div>
+      <div class="inst-img"><div class="inst-img-inner ib1"></div>
         <div class="inst-overlay"><div class="inst-overlay-text">"요가는 매트 위에서 시작하지만,<br>삶 속에서 완성됩니다."</div></div></div>
       <div class="inst-info"><h3>윤서현</h3><div class="inst-role">Head Instructor · Vinyasa</div><div class="inst-tags"><span class="inst-tag">빈야사</span><span class="inst-tag">아쉬탕가</span><span class="inst-tag">12년</span></div></div>
     </div>
     <div class="inst-card rv rv-d2" data-hover="Profile">
-      <div class="inst-img"><div class="inst-img-inner ib2"><div class="ph"><svg viewBox="0 0 24 24"><path d="M23 19a2 2 0 01-2 2H3a2 2 0 01-2-2V8a2 2 0 012-2h4l2-3h6l2 3h4a2 2 0 012 2z"/><circle cx="12" cy="13" r="4"/></svg><span>강사</span></div></div>
+      <div class="inst-img"><div class="inst-img-inner ib2"></div>
         <div class="inst-overlay"><div class="inst-overlay-text">"호흡 하나로 세상이 달라져요.<br>그 순간을 함께 나누고 싶어요."</div></div></div>
       <div class="inst-info"><h3>김지은</h3><div class="inst-role">Senior Instructor · Hatha</div><div class="inst-tags"><span class="inst-tag">하타</span><span class="inst-tag">인요가</span><span class="inst-tag">10년</span></div></div>
     </div>
     <div class="inst-card rv rv-d3" data-hover="Profile">
-      <div class="inst-img"><div class="inst-img-inner ib3"><div class="ph"><svg viewBox="0 0 24 24"><path d="M23 19a2 2 0 01-2 2H3a2 2 0 01-2-2V8a2 2 0 012-2h4l2-3h6l2 3h4a2 2 0 012 2z"/><circle cx="12" cy="13" r="4"/></svg><span>강사</span></div></div>
+      <div class="inst-img"><div class="inst-img-inner ib3"></div>
         <div class="inst-overlay"><div class="inst-overlay-text">"명상은 생각을 멈추는 게 아니라,<br>바라보는 연습이에요."</div></div></div>
       <div class="inst-info"><h3>박하린</h3><div class="inst-role">Instructor · Meditation</div><div class="inst-tags"><span class="inst-tag">명상</span><span class="inst-tag">호흡법</span><span class="inst-tag">8년</span></div></div>
     </div>
