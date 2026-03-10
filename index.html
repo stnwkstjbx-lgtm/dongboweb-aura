@@ -895,6 +895,8 @@ footer{padding:44px 48px;border-top:1px solid var(--border2)}
    JAVASCRIPT
    ============================================================ -->
 <script>
+if('scrollRestoration' in history)history.scrollRestoration='manual';
+window.scrollTo(0,0);
 /* COPYRIGHT YEAR */
 document.getElementById('yr').textContent=new Date().getFullYear();
 
