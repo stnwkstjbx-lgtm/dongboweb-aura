@@ -1229,7 +1229,7 @@ to{opacity:1;transform:none}
   position:relative;
   overflow:hidden;
 }
-.breathe-header{max-width:600px;margin:0 auto 48px}
+.breathe-header{max-width:680px;margin:0 auto 48px}
 .breathe-header .sec-label{justify-content:center}
 .breathe-wrap{display:flex;flex-direction:column;align-items:center;gap:28px}
 .breathe-circle-wrap{position:relative;width:clamp(160px,24vw,240px);height:clamp(160px,24vw,240px)}
@@ -1375,11 +1375,11 @@ to{opacity:1;transform:none}
 }
 .inst-card:hover .inst-tag{border-color:var(--coral);color:var(--coral)}
 /* ===== QUOTE_BREAK ===== */
-.quote-break{padding:80px 48px;text-align:center;position:relative;background:#E8836B;overflow:hidden}
-.quote-break-inner{max-width:600px;margin:0 auto;position:relative;z-index:1}
+.quote-break{display:flex;justify-content:center;align-items:center;padding:80px 48px;background:#E8836B;position:relative;overflow:hidden}
+.quote-break-inner{max-width:600px;width:100%;text-align:center;position:relative;z-index:1}
 .quote-break-icon{width:44px;height:44px;border-radius:50%;background:rgba(255,255,255,.15);display:flex;align-items:center;justify-content:center;margin:0 auto 24px}
 .quote-break-icon svg{width:20px;height:20px;fill:#fff;opacity:.8}
-.quote-break-text{font-family:var(--body);font-size:clamp(1.1rem,2vw,1.5rem);font-weight:300;color:#fff;line-height:2;letter-spacing:.02em}
+.quote-break-text{font-family:var(--body);font-size:clamp(1.1rem,2.4vw,1.6rem);font-weight:300;color:#fff;line-height:2.2;letter-spacing:.03em}
 .quote-break-text strong{font-weight:600;color:#fff}
 .quote-break-divider{width:32px;height:1px;background:#fff;opacity:.3;margin:20px auto}
 .quote-break-src{font-family:var(--sans);font-size:.38rem;color:rgba(255,255,255,.6);letter-spacing:.2em;text-transform:uppercase;display:block}
@@ -1396,10 +1396,10 @@ to{opacity:1;transform:none}
   border:1.5px solid var(--coral);
   opacity:.06;
 }
-.rv-header{max-width:640px;margin:0 auto 28px;text-align:center}
+.rv-header{max-width:720px;margin:0 auto 32px;text-align:center}
 .reviews .sec-label{justify-content:center}
 .rv-desc{max-width:none;margin:0 auto 6px;text-align:center}
-.rv-slider{position:relative;max-width:640px;margin:0 auto;overflow:hidden}
+.rv-slider{position:relative;max-width:720px;margin:0 auto;overflow:hidden}
 .rv-track{display:flex;transition:transform .6s var(--ease)}
 .rv-card{flex:0 0 100%;padding:0 20px}
 .rv-card-inner {
@@ -1667,11 +1667,6 @@ to{opacity:1;transform:none}
 .faq-a-inner{padding:0 0 20px;font-size:.68rem;color:var(--dim);line-height:2.2;font-weight:200}
 .faq-item.open .faq-a{max-height:400px}
 /* ===== MANDALA ===== */
-.mandala-wrap{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:clamp(260px,30vw,400px);height:clamp(260px,30vw,400px);pointer-events:none;opacity:.09}
-.mandala-svg{width:100%;height:100%}
-.mandala-svg circle,.mandala-svg path{fill:none;stroke:#fff;stroke-width:.5;stroke-dasharray:1200;stroke-dashoffset:1200;transition:stroke-dashoffset 2s cubic-bezier(.16,1,.3,1)}
-.mandala-svg.drawn circle,.mandala-svg.drawn path{stroke-dashoffset:0}
-.mandala-svg .m-petal{stroke-width:.4;opacity:.7}
 
 /* ===== MARQUEE ===== */
 .marquee{overflow:hidden;padding:20px 0;background:var(--coral);position:relative}
@@ -2089,7 +2084,14 @@ footer{padding:0;border-top:1px solid var(--border2)}
 .rv-scale.show{opacity:1;transform:none}
 @media(min-width:1500px){.about{padding-left:calc((100vw - 1200px)/2);padding-right:calc((100vw - 1200px)/2)}
 .programs .prog-header{padding-left:calc((100vw - 1200px)/2)}
-.instructors,.reviews,.info,.faq,.pricing,.schedule,.journey,.breathe-sec,.wellness,.insta-sec,.cta-banner,.awards{padding-left:calc((100vw - 1200px)/2);padding-right:calc((100vw - 1200px)/2)}
+.instructors,.reviews,.info,.faq,.pricing,.schedule,.journey,.breathe-sec,.wellness,.insta-sec,.cta-banner,.awards,.quote-break,.gallery{padding-left:calc((100vw - 1200px)/2);padding-right:calc((100vw - 1200px)/2)}
+.rv-header{max-width:800px}
+.rv-slider{max-width:800px}
+.rv-card-inner{padding:44px 40px}
+.breathe-header{max-width:740px}
+.cta-inner{max-width:800px}
+.sec-title{font-size:2.2rem}
+.about-top{max-width:720px}
 }
 @media(max-width:1024px){.about-imgs{gap:10px}
 .inst-grid{grid-template-columns:repeat(2,1fr);gap:20px}
@@ -2885,28 +2887,11 @@ a[href]::after{content:" (" attr(href) ")";font-size:.55rem;color:#666}
   </div>
 </section>
 
-<!-- QUOTE BREAK + MANDALA -->
-<div class=”quote-break rv” style=”text-align:center;background:#E8836B;padding:80px 48px”>
-  <div class=”mandala-wrap” aria-hidden=”true”>
-    <svg class=”mandala-svg” id=”mandala” viewBox=”0 0 400 400”>
-      <circle cx=”200” cy=”200” r=”180”/>
-      <circle cx=”200” cy=”200” r=”140”/>
-      <circle cx=”200” cy=”200” r=”100”/>
-      <circle cx=”200” cy=”200” r=”60”/>
-      <circle cx=”200” cy=”200” r=”20”/>
-      <path class=”m-petal” d=”M200 20 Q240 100 200 200 Q160 100 200 20Z”/>
-      <path class=”m-petal” d=”M380 200 Q300 240 200 200 Q300 160 380 200Z”/>
-      <path class=”m-petal” d=”M200 380 Q160 300 200 200 Q240 300 200 380Z”/>
-      <path class=”m-petal” d=”M20 200 Q100 160 200 200 Q100 240 20 200Z”/>
-      <path class=”m-petal” d=”M327 73 Q280 140 200 200 Q260 120 327 73Z”/>
-      <path class=”m-petal” d=”M327 327 Q260 280 200 200 Q280 260 327 327Z”/>
-      <path class=”m-petal” d=”M73 327 Q120 260 200 200 Q140 280 73 327Z”/>
-      <path class=”m-petal” d=”M73 73 Q140 120 200 200 Q120 140 73 73Z”/>
-    </svg>
-  </div>
-  <div class=”quote-break-inner” style=”max-width:600px;margin:0 auto”>
+<!-- QUOTE BREAK -->
+<div class=”quote-break rv” style=”display:flex;justify-content:center;align-items:center;background:#E8836B;padding:80px 48px”>
+  <div class=”quote-break-inner” style=”max-width:600px;width:100%;text-align:center”>
     <div class=”quote-break-icon” style=”width:44px;height:44px;border-radius:50%;background:rgba(255,255,255,.15);display:flex;align-items:center;justify-content:center;margin:0 auto 24px”><svg viewBox=”0 0 24 24” style=”width:20px;height:20px;fill:#fff”><path d=”M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z”/></svg></div>
-    <p class=”quote-break-text” style=”font-size:clamp(1.1rem,2vw,1.5rem);font-weight:300;color:#fff;line-height:2”>몸이 <strong style=”font-weight:600;color:#fff”>유연</strong>해지면<br>마음도 유연해집니다.</p>
+    <p class=”quote-break-text” style=”font-size:clamp(1.1rem,2.4vw,1.6rem);font-weight:300;color:#fff;line-height:2.2;letter-spacing:.03em”>몸이 <strong style=”font-weight:600;color:#fff”>유연</strong>해지면<br>마음도 유연해집니다.</p>
     <div class=”quote-break-divider” style=”width:32px;height:1px;background:#fff;opacity:.3;margin:20px auto”></div>
     <span class=”quote-break-src” style=”font-size:12px;color:rgba(255,255,255,.6);letter-spacing:.2em;text-transform:uppercase”>AURA Philosophy</span>
   </div>
@@ -3434,14 +3419,6 @@ var revObs=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isI
 document.querySelectorAll('.rv,.rv-left,.rv-right,.rv-scale').forEach(function(el){revObs.observe(el)});
 
 /* MANDALA DRAW ON SCROLL */
-var mandalaSvg=document.getElementById('mandala');
-if(mandalaSvg){
-  var mandalaObs=new IntersectionObserver(function(es){es.forEach(function(e){
-    if(e.isIntersecting){mandalaSvg.classList.add('drawn');mandalaObs.unobserve(e.target)}
-  })},{threshold:.3});
-  mandalaObs.observe(mandalaSvg);
-}
-
 /* COUNT UP */
 var countObs=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){var el=e.target,t=+el.dataset.count;
 var c=0;var step=function(){c+=Math.ceil(t/40);if(c>=t){el.textContent=t;return}el.textContent=c;setTimeout(step,40)};
