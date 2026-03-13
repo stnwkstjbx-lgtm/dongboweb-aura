@@ -1396,7 +1396,7 @@ to{opacity:1;transform:none}
   display:block;
 }
 /* ===== REVIEWS ===== */
-.reviews{padding:140px 48px;background:var(--bg2);position:relative;overflow:hidden}
+.reviews{padding:100px 48px;background:var(--bg2);position:relative;overflow:hidden}
 .reviews::before {
   content:'';
   position:absolute;
@@ -1408,7 +1408,9 @@ to{opacity:1;transform:none}
   border:1.5px solid var(--coral);
   opacity:.06;
 }
-.rv-header{max-width:1100px;margin:0 auto 48px}
+.rv-header{max-width:640px;margin:0 auto 28px;text-align:center}
+.reviews .sec-label{justify-content:center}
+.rv-desc{max-width:none;margin:0 auto 6px;text-align:center}
 .rv-slider{position:relative;max-width:640px;margin:0 auto;overflow:hidden}
 .rv-track{display:flex;transition:transform .6s var(--ease)}
 .rv-card{flex:0 0 100%;padding:0 20px}
@@ -1708,7 +1710,7 @@ to{opacity:1;transform:none}
 .rv-badge-score{font-family:var(--sans);font-size:1rem;font-weight:600;color:var(--coral)}
 .rv-badge-stars{display:flex;gap:2px}
 .rv-badge-star{width:12px;height:12px;fill:var(--coral)}
-.rv-badge-count{font-family:var(--sans);font-size:.4rem;color:var(--dim);letter-spacing:.04em;font-weight:300}
+.rv-badge-count{font-family:var(--sans);font-size:.42rem;color:var(--dim);letter-spacing:.04em;font-weight:300}
 
 /* ===== INSTAGRAM ===== */
 .insta-sec{padding:100px 48px;background:var(--bg2);text-align:center}
@@ -2923,6 +2925,7 @@ a[href]::after{content:" (" attr(href) ")";font-size:.55rem;color:#666}
 <!-- REVIEWS -->
 <section class="reviews rv" id="reviews">
   <div class="rv-header"><div class="sec-label">Reviews</div><h2 class="sec-title">수강 <strong>후기</strong></h2>
+    <p class="sec-desc rv-desc">회원님들이 직접 남겨주신 생생한 후기입니다</p>
     <div class="rv-badge">
       <span class="rv-badge-score">4.9</span>
       <div class="rv-badge-stars">
