@@ -1375,45 +1375,14 @@ to{opacity:1;transform:none}
 }
 .inst-card:hover .inst-tag{border-color:var(--coral);color:var(--coral)}
 /* ===== QUOTE_BREAK ===== */
-.quote-break{padding:100px 48px;text-align:center;position:relative}
-.quote-break-inner {
-  max-width:640px;
-  margin:0 auto;
-  position:relative;
-  background:var(--bg2);
-  border:1px solid var(--border);
-  border-radius:var(--round-lg);
-  padding:56px 48px 48px;
-}
-.quote-break-icon {
-  width:48px;
-  height:48px;
-  border-radius:50%;
-  background:var(--coral);
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  margin:0 auto 28px;
-}
-.quote-break-icon svg{width:22px;height:22px;fill:var(--white);opacity:.9}
-.quote-break-text {
-  font-family:var(--body);
-  font-size:clamp(1.1rem,2vw,1.5rem);
-  font-weight:200;
-  color:var(--fg2);
-  line-height:2;
-  letter-spacing:.02em;
-}
-.quote-break-text strong{font-weight:500;color:var(--coral)}
-.quote-break-divider{width:32px;height:1.5px;background:var(--coral);opacity:.25;margin:24px auto}
-.quote-break-src {
-  font-family:var(--sans);
-  font-size:.38rem;
-  color:var(--dim2);
-  letter-spacing:.2em;
-  text-transform:uppercase;
-  display:block;
-}
+.quote-break{padding:80px 48px;text-align:center;position:relative;background:#E8836B;overflow:hidden}
+.quote-break-inner{max-width:600px;margin:0 auto;position:relative;z-index:1}
+.quote-break-icon{width:44px;height:44px;border-radius:50%;background:rgba(255,255,255,.15);display:flex;align-items:center;justify-content:center;margin:0 auto 24px}
+.quote-break-icon svg{width:20px;height:20px;fill:#fff;opacity:.8}
+.quote-break-text{font-family:var(--body);font-size:clamp(1.1rem,2vw,1.5rem);font-weight:300;color:#fff;line-height:2;letter-spacing:.02em}
+.quote-break-text strong{font-weight:600;color:#fff}
+.quote-break-divider{width:32px;height:1px;background:#fff;opacity:.3;margin:20px auto}
+.quote-break-src{font-family:var(--sans);font-size:.38rem;color:rgba(255,255,255,.6);letter-spacing:.2em;text-transform:uppercase;display:block}
 /* ===== REVIEWS ===== */
 .reviews{padding:100px 48px;background:var(--bg2);position:relative;overflow:hidden}
 .reviews::before {
@@ -1700,7 +1669,7 @@ to{opacity:1;transform:none}
 /* ===== MANDALA ===== */
 .mandala-wrap{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:clamp(260px,30vw,400px);height:clamp(260px,30vw,400px);pointer-events:none;opacity:.09}
 .mandala-svg{width:100%;height:100%}
-.mandala-svg circle,.mandala-svg path{fill:none;stroke:var(--coral);stroke-width:.5;stroke-dasharray:1200;stroke-dashoffset:1200;transition:stroke-dashoffset 2s cubic-bezier(.16,1,.3,1)}
+.mandala-svg circle,.mandala-svg path{fill:none;stroke:#fff;stroke-width:.5;stroke-dasharray:1200;stroke-dashoffset:1200;transition:stroke-dashoffset 2s cubic-bezier(.16,1,.3,1)}
 .mandala-svg.drawn circle,.mandala-svg.drawn path{stroke-dashoffset:0}
 .mandala-svg .m-petal{stroke-width:.4;opacity:.7}
 
@@ -2177,7 +2146,6 @@ nav.nav-hidden{transform:translateY(-100%)}
 .inst-grid{grid-template-columns:1fr;max-width:360px;margin:0 auto;gap:16px}
 .inst-card:nth-child(2){margin-top:0}
 .quote-break{padding:56px 20px}
-.quote-break-inner{padding:40px 24px 36px}
 .gallery{padding:80px 20px}
 .gal-header{margin-bottom:28px}
 .gal-grid{grid-template-columns:repeat(2,1fr);grid-auto-rows:160px;gap:6px}
@@ -2918,7 +2886,7 @@ a[href]::after{content:" (" attr(href) ")";font-size:.55rem;color:#666}
 </section>
 
 <!-- QUOTE BREAK + MANDALA -->
-<div class=”quote-break rv”>
+<div class=”quote-break rv” style=”text-align:center;background:#E8836B;padding:80px 48px”>
   <div class=”mandala-wrap” aria-hidden=”true”>
     <svg class=”mandala-svg” id=”mandala” viewBox=”0 0 400 400”>
       <circle cx=”200” cy=”200” r=”180”/>
@@ -2936,11 +2904,11 @@ a[href]::after{content:" (" attr(href) ")";font-size:.55rem;color:#666}
       <path class=”m-petal” d=”M73 73 Q140 120 200 200 Q120 140 73 73Z”/>
     </svg>
   </div>
-  <div class=”quote-break-inner”>
-    <div class=”quote-break-icon”><svg viewBox=”0 0 24 24”><path d=”M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z”/></svg></div>
-    <p class=”quote-break-text”>몸이 <strong>유연</strong>해지면<br>마음도 유연해집니다.</p>
-    <div class=”quote-break-divider”></div>
-    <span class=”quote-break-src”>AURA Philosophy</span>
+  <div class=”quote-break-inner” style=”max-width:600px;margin:0 auto”>
+    <div class=”quote-break-icon” style=”width:44px;height:44px;border-radius:50%;background:rgba(255,255,255,.15);display:flex;align-items:center;justify-content:center;margin:0 auto 24px”><svg viewBox=”0 0 24 24” style=”width:20px;height:20px;fill:#fff”><path d=”M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z”/></svg></div>
+    <p class=”quote-break-text” style=”font-size:clamp(1.1rem,2vw,1.5rem);font-weight:300;color:#fff;line-height:2”>몸이 <strong style=”font-weight:600;color:#fff”>유연</strong>해지면<br>마음도 유연해집니다.</p>
+    <div class=”quote-break-divider” style=”width:32px;height:1px;background:#fff;opacity:.3;margin:20px auto”></div>
+    <span class=”quote-break-src” style=”font-size:12px;color:rgba(255,255,255,.6);letter-spacing:.2em;text-transform:uppercase”>AURA Philosophy</span>
   </div>
 </div>
 
